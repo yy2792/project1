@@ -449,7 +449,7 @@ def tripsData(month):
 
     if month not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
         return json.dumps({"error": "Invalid month"}), 500
-    
+
     page, per_page, offset = get_page_args(page_parameter='page',
                                            per_page_parameter='per_page')
 
@@ -547,8 +547,35 @@ def addTrips():
         return json.dumps({"error": "Invalid uid for user id"}), 500
 
     # a bike cannot get accessed at the same time, same station
-    cmd4 = "select exists(select 1 from users where uid = :uid)"
-    cursor = g.conn.execute(text(cmd3), uid=user_id)
+    cmd4 = '''
+    with station_arrive as  (select i2.rid, i2.sid, i2.time
+    From involves i2, station s2
+    Where i2.sid = s2.sid and i2.arrive_depart = True),
+    station_depart as  (select i2.rid, i2.sid, i2.time
+    From involves i2, station s2
+    Where i2.sid = s2.sid and i2.arrive_depart  = False),
+    alltrips as (Select station_depart.time starttime, station_arrive.time stoptime, 
+    station_depart.sid start_station_sid, 
+    station_arrive.sid stop_station_sid,
+    bike.bid, users.uid
+    From station_arrive, station_depart, ride, bike, users
+    Where station_arrive.rid = station_depart.rid and station_arrive.rid = ride.rid and bike.bid = ride.bid and users.uid = ride.uid
+    order by starttime)
+    select exists(select 1 from alltrips where starttime =:starttime and stoptime =:stoptime and
+    start_station_sid = :start_station_sid and stop_station_sid = :stop_station_sid and
+    bid = :bid and uid = :uid)
+    '''
+
+    cursor = g.conn.execute(text(cmd4), starttime = starttime, stoptime = stoptime,
+    start_station_sid = start_station_sid, stop_station_sid = stop_station_sid,
+    bid = bike_id, uid = user_id)
+
+    res = False
+    for c in cursor:
+        res = c
+    if res['exists']:
+        return json.dumps({"error": "The record already exists"}), 500
+
 
 # parent directory for all weather data
 @app.route('/weather')
