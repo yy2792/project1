@@ -23,6 +23,7 @@ import folium
 from flask_paginate import Pagination, get_page_args
 from collections import namedtuple
 import numpy as np
+import json
 
 tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 app = Flask(__name__, template_folder=tmpl_dir)
@@ -492,6 +493,47 @@ def tripsData(month):
     pagination = Pagination(page=page, per_page=per_page, total=total, css_framework='bootstrap4')
 
     return render_template("tripsData.html", items = pagination_users, pagination = pagination)
+
+
+@app.route('/addTrips', methods=['POST'])
+def addTrips():
+    starttime = request.form['starttime']
+    stoptime = request.form['stoptime']
+    start_station_sid = request.form['start_station_sid']
+    stop_station_sid = request.form['stop_station_sid']
+    bike_id = request.form['bike_id']
+    user_id = request.form['user_id']
+
+    if starttime > stoptime:
+        return json.dumps({"error": "starttime should be earlier than stoptime"}), 500
+
+    # only existing station should be accessed
+    cmd1 = "select exists(select 1 from station where sid = :sid)"
+
+    # if already exists sid
+    cursor = g.conn.execute(text(cmd1), sid = start_station_sid)
+    res = None
+    for c in cursor:
+        res = c
+    if not res['exists']:
+        return json.dumps({"error": "Invalid sid for start station sid"}), 500
+
+    cursor = g.conn.execute(text(cmd1), sid=stop_station_sid)
+    res = None
+    for c in cursor:
+        res = c
+    if not res['exists']:
+        return json.dumps({"error": "Invalid sid for stop station sid"}), 500
+
+    # only existing bid should be accessed
+    cmd2 = "select exists(select 1 from bike where bid = :bid)"
+    cursor = g.conn.execute(text(cmd1), bid=stop_station_sid)
+    res = None
+    for c in cursor:
+        res = c
+    if not res['exists']:
+        return json.dumps({"error": "Invalid sid for stop station sid"}), 500
+
 
 # parent directory for all weather data
 @app.route('/weather')
