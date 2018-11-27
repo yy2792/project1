@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#station {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#station td, #customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#station tr:nth-child(even){background-color: #f2f2f2;}
+
+#station tr:hover {background-color: #ddd;}
+
+#station th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00BFFF;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<h1>Citi Bike Store Data</h1>
+
+<p><a href="/store">Go back to store page</a></p>
+
+<div style="overflow-x:auto;">
+<table id="station">
+  <tr>
+    <th>sid</th>
+    <th>station</th>
+    <th>bid</th>
+    <th>arrive_time</th>
+  </tr>
+ {% for item in items %}
+  <tr>
+    <TD>{{item.sid}}</TD>
+    <TD>{{item.station}}</TD>
+    <TD>{{item.bid}}</TD>
+    <TD>{{item.arrive_time}}</TD>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
+
+</body>
+</html>
