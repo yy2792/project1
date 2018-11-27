@@ -514,6 +514,28 @@ def weatherData():
 
     return render_template("weatherData.html", items=items)
 
+@app.route('/addWeather', methods=['POST'])
+def addWeather():
+    date_id = request.form['date_id']
+    max_temp = request.form['max_temp']
+    min_temp = request.form['min_temp']
+    avg_temp = request.form['avg_temp']
+    hdds = request.form['hdds']
+    cdds = request.form['cdds']
+    precipitation = request.form['precipitation']
+    snowfall = request.form['snowfall']
+    snowdepth = request.form['snowdepth']
+
+    cmd = '''
+        INSERT INTO weather(date_id, max_temp, min_temp, avg_temp, hdds, cdds, 
+        precipitation, snowfall, snowdepth) VALUES (:date_id, :max_temp, :min_temp, 
+        :avg_temp, :hdds, :cdds, :precipitation, :snowfall, :snowdepth)
+        '''
+    g.conn.execute(text(cmd), date_id = date_id, max_temp = max_temp, min_temp = min_temp,
+                   avg_temp = avg_temp, hdds = hdds, cdds = cdds,
+                   precipitation = precipitation, snowfall = snowfall, snowdepth = snowdepth)
+    return redirect('/weatherData')
+
 # parent directory for all station data
 @app.route('/users')
 def users():
@@ -549,6 +571,7 @@ def addUser():
     cmd = "INSERT INTO users(uid, ctype, gender, birthyear) VALUES (:uid, :ctype, :gender, :birthyear)"
     g.conn.execute(text(cmd), uid = res, ctype = ctype, gender = gender, birthyear = birthyear)
     return redirect('/usersData')
+
 
 def get_arrows(locations, some_map, color= "#E37222", size=6, n_arrows=3):
     '''
