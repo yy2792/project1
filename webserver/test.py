@@ -572,6 +572,28 @@ def addUser():
     g.conn.execute(text(cmd), uid = res, ctype = ctype, gender = gender, birthyear = birthyear)
     return redirect('/usersData')
 
+# parent directory for all station data
+@app.route('/store')
+def store():
+    return render_template("store.html")
+
+@app.route('/storeData')
+def storeData():
+
+    cursor = g.conn.execute('''
+     SELECT store.bid, store.sid, station.name station, arrive_time FROM store, station Where store.bid = station.sid
+    ''')
+    items = []
+
+    for result in cursor:
+        an_item = dict(sid = result['bid'], station = result['station'], bid = result['sid'],
+                       arrive_time = result['arrive_time'])
+        items.append(an_item)
+
+    cursor.close()
+
+    return render_template("storeData.html", items = items)
+
 
 def get_arrows(locations, some_map, color= "#E37222", size=6, n_arrows=3):
     '''
