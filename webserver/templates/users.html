@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Users Data</h1>
+<p><a href="/usersData">View Users Data</a></p>
+
+<form method="POST" action="/addUser"><p>New User Data:
+  ctype: <select name = "ctype">
+    <option value="Customer">Customer</option>
+    <option value="Subscriber">Subscriber</option>
+    </select>
+  gender: <input type="number" name="gender", step = 1, min = "0", max = "2">
+  birthyear: <input type="number" name="birthyear", step = 1>
+  <input type="submit" value="Add"></p>
+</form>
+
+</body>
+<html>

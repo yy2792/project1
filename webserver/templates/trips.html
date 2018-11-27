@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Citi Bike Trips Data</h1>
+<p><a href="/tripsData/month/1">View Stations Data Jan</a></p>
+<p><a href="/tripsData/month/2">View Stations Data Feb</a></p>
+<p><a href="/tripsData/month/3">View Stations Data March</a></p>
+<p><a href="/tripsData/month/4">View Stations Data April</a></p>
+<p><a href="/tripsData/month/5">View Stations Data May</a></p>
+<p><a href="/tripsData/month/6">View Stations Data June</a></p>
+<p><a href="/tripsData/month/7">View Stations Data July</a></p>
+<p><a href="/tripsData/month/8">View Stations Data August</a></p>
+
+<form method="POST" action="/addStation"><p>New trip data:
+  <p>starttime: <input type="datetime-local" name="starttime"></p>
+  <p>stoptime: <input type="datetime-local" name="stoptime"></p>
+  <p>start_station: <input type="text" name="start_station"></p>
+  <p>start_station_latitude: <input type="number" name="start_station_latitude", step = "any"></p>
+  <p>start_station_longtitude: <input type="number" name="start_station_longtitude", step = "any"></p>
+  <p>stop_station: <input type="text" name="stop_station"></p>
+  <p>stop_station_latitude: <input type="number" name="stop_station_latitude", step = "any"></p>
+  <p>stop_station_longtitude: <input type="number" name="stop_station_longtitude", step = "any"></p>
+  <p>bike_id: <input type="number" name="bike_id", step = 1></p>
+  <p>user_id: <input type="number" name="user_id", step = 1></p>
+  <input type="submit" value="Add"></p>
+</form>
+
+</body>
+<html>

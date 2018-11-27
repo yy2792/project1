@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#station {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#station td, #customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#station tr:nth-child(even){background-color: #f2f2f2;}
+
+#station tr:hover {background-color: #ddd;}
+
+#station th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00BFFF;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<h1>Citi Bike Users</h1>
+
+<p><a href="/users">Go back to users page</a></p>
+
+<div style="overflow-x:auto;">
+<table id="station">
+  <tr>
+    <th>uid</th>
+    <th>ctype</th>
+    <th>gender</th>
+    <th>birthyear</th>
+  </tr>
+ {% for item in items %}
+  <tr>
+    <TD>{{item.uid}}</TD>
+    <TD>{{item.ctype}}</TD>
+    <TD>{{item.gender}}</TD>
+    <TD>{{item.birthyear}}</TD>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Stations Data</h1>
+<p><a href="/stationData">View Stations Data</a></p>
+<p><a href="/stationMap">Visualize Station Map</a></p>
+<p><a href="/stationTrips">Visualize Stations with the Most Trips</a></p>
+<p><a href="/stationOutflow">Visualize Stations with the Most Outflow</a></p>
+<p><a href ="/stationRoutes">Visualize Stations with the Most Common Routes</a></P>
+
+<form method="POST" action="/addStation"><p>New station data:
+  sid: <input type="number" name="sid", step = 1>
+  name: <input type="text" name="name">
+  latitude: <input type="number" name="latitude", step = "any">
+  longtitude: <input type="number" name="longtitude", step = "any">
+  <input type="submit" value="Add"></p>
+</form>
+
+</body>
+<html>

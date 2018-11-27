@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#station {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#station td, #customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#station tr:nth-child(even){background-color: #f2f2f2;}
+
+#station tr:hover {background-color: #ddd;}
+
+#station th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00BFFF;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<h1>Weather Data</h1>
+
+<p><a href="/users">Go back to weather page</a></p>
+
+<div style="overflow-x:auto;">
+<table id="station">
+  <tr>
+    <th>date_id</th>
+    <th>max_temp</th>
+    <th>min_temp</th>
+    <th>avg_temp</th>
+    <th>hdds</th>
+    <th>cdds</th>
+    <th>precipitation</th>
+    <th>snowfall</th>
+    <th>snowdepth</th>
+  </tr>
+ {% for item in items %}
+  <tr>
+    <TD>{{item.date_id}}</TD>
+    <TD>{{item.max_temp}}</TD>
+    <TD>{{item.min_temp}}</TD>
+    <TD>{{item.avg_temp}}</TD>
+    <TD>{{item.hdds}}</TD>
+    <TD>{{item.cdds}}</TD>
+    <TD>{{item.precipitation}}</TD>
+    <TD>{{item.snowfall}}</TD>
+    <TD>{{item.snowdepth}}</TD>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
+
+</body>
+</html>

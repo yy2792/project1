@@ -6,7 +6,7 @@ Example webserver
 
 To run locally
 
-    python server.py
+python server.py
 
 Go to http://localhost:8111 in your browser
 
@@ -24,7 +24,6 @@ tmpl_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'templates')
 app = Flask(__name__, template_folder=tmpl_dir)
 
 
-
 # XXX: The Database URI should be in the format of: 
 #
 #     postgresql://USER:PASSWORD@<IP_OF_POSTGRE_SQL_SERVER>/<DB_NAME>
@@ -36,8 +35,8 @@ app = Flask(__name__, template_folder=tmpl_dir)
 # For your convenience, we already set it to the class database
 
 # Use the DB credentials you received by e-mail
-DB_USER = "YOUR_DB_USERNAME_HERE"
-DB_PASSWORD = "YOUR_DB_PASSWORD_HERE"
+DB_USER = "yy2792"
+DB_PASSWORD = "palhm70w"
 
 DB_SERVER = "w4111.cisxo09blonu.us-east-1.rds.amazonaws.com"
 
@@ -153,7 +152,6 @@ def index():
   #     {% endfor %}
   #
   context = dict(data = names)
-
 
   #
   # render_template looks in the templates/ folder for files.

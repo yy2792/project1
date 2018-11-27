@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+<h1>Weather Data</h1>
+<p><a href="/weatherData">View weather Data</a></p>
+
+<form method="POST" action="/addWeather"><p>New weather Data:
+  <p>date_id: <input type="datetime-local" name="date_id"></p>
+  <p>max_temp: <input type="number" name="max_temp", step = "any"></p>
+  <p>min_temp: <input type="number" name="min_temp", step = "any"></p>
+  <p>avg_temp: <input type="number" name="avg_temp", step = "any"></p>
+  <p>hdds: <input type="number" name="hdds", step = "any"></p>
+  <p>cdds: <input type="number" name="cdds", step = "any"></p>
+  <p>precipitation: <input type="number" name="precipitation", step = "any"></p>
+  <p>snowfall: <input type="number" name="snowfall", step = "any"></p>
+  <p>snowdepth: <input type="number" name="snowdepth", step = "any"></p>
+  <p><input type="submit" value="Add"></p>
+</form>
+
+</body>
+<html>

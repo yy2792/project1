@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#station {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#station td, #customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#station tr:nth-child(even){background-color: #f2f2f2;}
+
+#station tr:hover {background-color: #ddd;}
+
+#station th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00BFFF;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<h1>Citi Bike Trips</h1>
+
+<p><a href="/trips">Go back to trips page</a></p>
+
+<div style="overflow-x:auto;">
+{{pagination.info}}
+{{pagination.links}}
+<table id="station">
+  <tr>
+    <th>starttime</th>
+    <th>stoptime</th>
+    <th>tripduration</th>
+    <th>start_station</th>
+    <th>start_station_latitude</th>
+    <th>start_station_longtitude</th>
+    <th>stop_station</th>
+    <th>stop_station_latitude</th>
+    <th>stop_station_longtitude</th>
+    <th>bike_id</th>
+    <th>user_id</th>
+    <th>ctype</th>
+    <th>gender</th>
+    <th>birthyear</th>
+  </tr>
+ {% for item in items %}
+  <tr>
+    <TD>{{item.starttime}}</TD>
+    <TD>{{item.stoptime}}</TD>
+    <TD>{{item.tripduration}}</TD>
+    <TD>{{item.start_station}}</TD>
+    <TD>{{item.start_station_latitude}}</TD>
+    <TD>{{item.start_station_longtitude}}</TD>
+    <TD>{{item.stop_station}}</TD>
+    <TD>{{item.stop_station_latitude}}</TD>
+    <TD>{{item.stop_station_longtitude}}</TD>
+    <TD>{{item.bike_id}}</TD>
+    <TD>{{item.user_id}}</TD>
+    <TD>{{item.ctype}}</TD>
+    <TD>{{item.gender}}</TD>
+    <TD>{{item.birthyear}}</TD>
+  </tr>
+{% endfor %}
+</table>
+{{pagination.links}}
+
+</div>
+
+</body>
+</html>

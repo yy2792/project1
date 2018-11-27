@@ -1,0 +1,4246 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.3.4/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_73912677d5ee48cfa594fe2cf647af2e {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_73912677d5ee48cfa594fe2cf647af2e" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_73912677d5ee48cfa594fe2cf647af2e = L.map(
+        'map_73912677d5ee48cfa594fe2cf647af2e', {
+        center: [40.738, -73.98],
+        zoom: 13,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_876facbcb9674b28b3c5d3135e84a33f = L.tileLayer(
+        'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_all/{z}/{x}/{y}.png',
+        {
+        "attribution": null, 
+        "detectRetina": false, 
+        "maxNativeZoom": 18, 
+        "maxZoom": 18, 
+        "minZoom": 0, 
+        "noWrap": false, 
+        "opacity": 1, 
+        "subdomains": "abc", 
+        "tms": false
+}).addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+    
+            var circle_marker_2edee9207fac47ecb7a86acf4b428324 = L.circleMarker(
+                [40.7162469, -74.0334588],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_cc8abe6019734a95ae4d725d00c65714 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7a13ce189c66453cadd0c742fc61cf29 = $(`<div id="html_7a13ce189c66453cadd0c742fc61cf29" style="width: 100.0%; height: 100.0%;">Exchange Place<br>                 latitude: 40.7162469<br>                  longtitude: -74.0334588</div>`)[0];
+                popup_cc8abe6019734a95ae4d725d00c65714.setContent(html_7a13ce189c66453cadd0c742fc61cf29);
+            
+
+            circle_marker_2edee9207fac47ecb7a86acf4b428324.bindPopup(popup_cc8abe6019734a95ae4d725d00c65714)
+            ;
+
+            
+        
+    
+            var circle_marker_4345074a547649518879db9648c501cf = L.circleMarker(
+                [40.7141454, -74.0335519],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_9eba36feaa4b4a83be910d292f83638e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_663b8d23eac045dc94fe70e875c3e2d7 = $(`<div id="html_663b8d23eac045dc94fe70e875c3e2d7" style="width: 100.0%; height: 100.0%;">Paulus Hook<br>                 latitude: 40.7141454<br>                  longtitude: -74.0335519</div>`)[0];
+                popup_9eba36feaa4b4a83be910d292f83638e.setContent(html_663b8d23eac045dc94fe70e875c3e2d7);
+            
+
+            circle_marker_4345074a547649518879db9648c501cf.bindPopup(popup_9eba36feaa4b4a83be910d292f83638e)
+            ;
+
+            
+        
+    
+            var circle_marker_e61976af41df4ec88daaeddac43f2bc3 = L.circleMarker(
+                [40.7177325, -74.043845],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_f93dc48f4c3343ca87cc886b77f63be0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_50f2139205194d1ab7425578639e563e = $(`<div id="html_50f2139205194d1ab7425578639e563e" style="width: 100.0%; height: 100.0%;">City Hall<br>                 latitude: 40.7177325<br>                  longtitude: -74.043845</div>`)[0];
+                popup_f93dc48f4c3343ca87cc886b77f63be0.setContent(html_50f2139205194d1ab7425578639e563e);
+            
+
+            circle_marker_e61976af41df4ec88daaeddac43f2bc3.bindPopup(popup_f93dc48f4c3343ca87cc886b77f63be0)
+            ;
+
+            
+        
+    
+            var circle_marker_6e426eedfd9c4838a1e67d9a25802df3 = L.circleMarker(
+                [40.71958612, -74.04311746],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_0207dd5283af453d85a98d2fb894bc02 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_91f3978ae01e48709ae7f12c3c18e414 = $(`<div id="html_91f3978ae01e48709ae7f12c3c18e414" style="width: 100.0%; height: 100.0%;">Grove St PATH<br>                 latitude: 40.71958612<br>                  longtitude: -74.04311746</div>`)[0];
+                popup_0207dd5283af453d85a98d2fb894bc02.setContent(html_91f3978ae01e48709ae7f12c3c18e414);
+            
+
+            circle_marker_6e426eedfd9c4838a1e67d9a25802df3.bindPopup(popup_0207dd5283af453d85a98d2fb894bc02)
+            ;
+
+            
+        
+    
+            var circle_marker_3183768219774c558640cbd54f1d60fd = L.circleMarker(
+                [40.7211236, -74.03805095],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_f34043715ea44ee5848e7e9a691b3f9e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_15e5d64b29f846b6bee0ea65b915b5d2 = $(`<div id="html_15e5d64b29f846b6bee0ea65b915b5d2" style="width: 100.0%; height: 100.0%;">Warren St<br>                 latitude: 40.7211236<br>                  longtitude: -74.03805095</div>`)[0];
+                popup_f34043715ea44ee5848e7e9a691b3f9e.setContent(html_15e5d64b29f846b6bee0ea65b915b5d2);
+            
+
+            circle_marker_3183768219774c558640cbd54f1d60fd.bindPopup(popup_f34043715ea44ee5848e7e9a691b3f9e)
+            ;
+
+            
+        
+    
+            var circle_marker_1e290af61efd40a89a2968b011390b33 = L.circleMarker(
+                [40.7101087, -74.0858489],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c53f09bd09eb4d8793f19fa5861a92fc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_13128f819bf64e2d848c8d6bdebfa4e9 = $(`<div id="html_13128f819bf64e2d848c8d6bdebfa4e9" style="width: 100.0%; height: 100.0%;">NJCU<br>                 latitude: 40.7101087<br>                  longtitude: -74.0858489</div>`)[0];
+                popup_c53f09bd09eb4d8793f19fa5861a92fc.setContent(html_13128f819bf64e2d848c8d6bdebfa4e9);
+            
+
+            circle_marker_1e290af61efd40a89a2968b011390b33.bindPopup(popup_c53f09bd09eb4d8793f19fa5861a92fc)
+            ;
+
+            
+        
+    
+            var circle_marker_5ac7b3623d3743dda4fad5c91621146d = L.circleMarker(
+                [40.714402, -74.0887723],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_ca76686d8da64f708beea6e4dcc57420 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b76e60fa9d8a49d6ade7d8e6dbe89a0b = $(`<div id="html_b76e60fa9d8a49d6ade7d8e6dbe89a0b" style="width: 100.0%; height: 100.0%;">West Side Light Rail<br>                 latitude: 40.714402<br>                  longtitude: -74.0887723</div>`)[0];
+                popup_ca76686d8da64f708beea6e4dcc57420.setContent(html_b76e60fa9d8a49d6ade7d8e6dbe89a0b);
+            
+
+            circle_marker_5ac7b3623d3743dda4fad5c91621146d.bindPopup(popup_ca76686d8da64f708beea6e4dcc57420)
+            ;
+
+            
+        
+    
+            var circle_marker_16c37481bc404eab82fa77d08e041bef = L.circleMarker(
+                [40.71046702, -74.0700388],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_3ea7b20656af4ce7878b2f33db301f5a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_88ab6adaa8514e67a2bfab74129e5991 = $(`<div id="html_88ab6adaa8514e67a2bfab74129e5991" style="width: 100.0%; height: 100.0%;">Garfield Ave Station<br>                 latitude: 40.71046702<br>                  longtitude: -74.0700388</div>`)[0];
+                popup_3ea7b20656af4ce7878b2f33db301f5a.setContent(html_88ab6adaa8514e67a2bfab74129e5991);
+            
+
+            circle_marker_16c37481bc404eab82fa77d08e041bef.bindPopup(popup_3ea7b20656af4ce7878b2f33db301f5a)
+            ;
+
+            
+        
+    
+            var circle_marker_e61aec44f43f403a99b04080820a6994 = L.circleMarker(
+                [40.7182113, -74.0836394],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_fd9cead8df8f485ba78df44d0fa15960 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4413b91a89ca406cb63b3f88f86e4be1 = $(`<div id="html_4413b91a89ca406cb63b3f88f86e4be1" style="width: 100.0%; height: 100.0%;">Union St<br>                 latitude: 40.7182113<br>                  longtitude: -74.0836394</div>`)[0];
+                popup_fd9cead8df8f485ba78df44d0fa15960.setContent(html_4413b91a89ca406cb63b3f88f86e4be1);
+            
+
+            circle_marker_e61aec44f43f403a99b04080820a6994.bindPopup(popup_fd9cead8df8f485ba78df44d0fa15960)
+            ;
+
+            
+        
+    
+            var circle_marker_403fb69086304e9a9073372789db0825 = L.circleMarker(
+                [40.7112423, -74.0557013],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_9ffdf0728da64cc697e69e0f676450fb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3c916cc987aa47f1b7be94884c1dc995 = $(`<div id="html_3c916cc987aa47f1b7be94884c1dc995" style="width: 100.0%; height: 100.0%;">Liberty Light Rail<br>                 latitude: 40.7112423<br>                  longtitude: -74.0557013</div>`)[0];
+                popup_9ffdf0728da64cc697e69e0f676450fb.setContent(html_3c916cc987aa47f1b7be94884c1dc995);
+            
+
+            circle_marker_403fb69086304e9a9073372789db0825.bindPopup(popup_9ffdf0728da64cc697e69e0f676450fb)
+            ;
+
+            
+        
+    
+            var circle_marker_fe4ed6984c774ca7aae2cfa7e20e2cfa = L.circleMarker(
+                [40.7246051, -74.07840595],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_037b35fa13cb4da8b3b819ffeb222dc5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_960f823ac36144c0942faa1729e88b5a = $(`<div id="html_960f823ac36144c0942faa1729e88b5a" style="width: 100.0%; height: 100.0%;">Lincoln Park<br>                 latitude: 40.7246051<br>                  longtitude: -74.07840595</div>`)[0];
+                popup_037b35fa13cb4da8b3b819ffeb222dc5.setContent(html_960f823ac36144c0942faa1729e88b5a);
+            
+
+            circle_marker_fe4ed6984c774ca7aae2cfa7e20e2cfa.bindPopup(popup_037b35fa13cb4da8b3b819ffeb222dc5)
+            ;
+
+            
+        
+    
+            var circle_marker_69cb7f13bf6a443ea2b9e74bb3462e6c = L.circleMarker(
+                [40.72533993, -74.06762213],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_400523d7204543ed8011969cefd13f18 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1693c739b726451d865954569839a6b8 = $(`<div id="html_1693c739b726451d865954569839a6b8" style="width: 100.0%; height: 100.0%;">McGinley Square<br>                 latitude: 40.72533993<br>                  longtitude: -74.06762213</div>`)[0];
+                popup_400523d7204543ed8011969cefd13f18.setContent(html_1693c739b726451d865954569839a6b8);
+            
+
+            circle_marker_69cb7f13bf6a443ea2b9e74bb3462e6c.bindPopup(popup_400523d7204543ed8011969cefd13f18)
+            ;
+
+            
+        
+    
+            var circle_marker_7d07bfb56ba74ca0a8145477d357bc57 = L.circleMarker(
+                [40.73074263, -74.06378388],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_2e76843f7ec0477bbf95162d31018be7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e6f1c900a8f748ea975dd442d0256c75 = $(`<div id="html_e6f1c900a8f748ea975dd442d0256c75" style="width: 100.0%; height: 100.0%;">Sip Ave<br>                 latitude: 40.73074263<br>                  longtitude: -74.06378388</div>`)[0];
+                popup_2e76843f7ec0477bbf95162d31018be7.setContent(html_e6f1c900a8f748ea975dd442d0256c75);
+            
+
+            circle_marker_7d07bfb56ba74ca0a8145477d357bc57.bindPopup(popup_2e76843f7ec0477bbf95162d31018be7)
+            ;
+
+            
+        
+    
+            var circle_marker_57a26616d0864686afd23d40ed7527c4 = L.circleMarker(
+                [40.7443187, -74.0439909],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1233d47db5e344edb35c5616d8325ef4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8912e4e5c5ab4c0b8d0b41da4b386def = $(`<div id="html_8912e4e5c5ab4c0b8d0b41da4b386def" style="width: 100.0%; height: 100.0%;">Riverview Park<br>                 latitude: 40.7443187<br>                  longtitude: -74.0439909</div>`)[0];
+                popup_1233d47db5e344edb35c5616d8325ef4.setContent(html_8912e4e5c5ab4c0b8d0b41da4b386def);
+            
+
+            circle_marker_57a26616d0864686afd23d40ed7527c4.bindPopup(popup_1233d47db5e344edb35c5616d8325ef4)
+            ;
+
+            
+        
+    
+            var circle_marker_baf85306b9084a438ab1ddbeb09e8fb0 = L.circleMarker(
+                [40.74871595, -74.0404433],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_6f7c0f7530474203a37d9c4c12be897b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_62dfb6330a9c4574b55e39c111241303 = $(`<div id="html_62dfb6330a9c4574b55e39c111241303" style="width: 100.0%; height: 100.0%;">Heights Elevator<br>                 latitude: 40.74871595<br>                  longtitude: -74.0404433</div>`)[0];
+                popup_6f7c0f7530474203a37d9c4c12be897b.setContent(html_62dfb6330a9c4574b55e39c111241303);
+            
+
+            circle_marker_baf85306b9084a438ab1ddbeb09e8fb0.bindPopup(popup_6f7c0f7530474203a37d9c4c12be897b)
+            ;
+
+            
+        
+    
+            var circle_marker_1ab534149df84ca399df2155124d74d6 = L.circleMarker(
+                [40.7287448, -74.0321082],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_5cb5d27d2c164b24a916f9519a53e8fc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_97c939c7f6264e79a02d8f142e137236 = $(`<div id="html_97c939c7f6264e79a02d8f142e137236" style="width: 100.0%; height: 100.0%;">Newport Pkwy<br>                 latitude: 40.7287448<br>                  longtitude: -74.0321082</div>`)[0];
+                popup_5cb5d27d2c164b24a916f9519a53e8fc.setContent(html_97c939c7f6264e79a02d8f142e137236);
+            
+
+            circle_marker_1ab534149df84ca399df2155124d74d6.bindPopup(popup_5cb5d27d2c164b24a916f9519a53e8fc)
+            ;
+
+            
+        
+    
+            var circle_marker_56c2d3a3b2d248b1b029f9aac8e10694 = L.circleMarker(
+                [40.7111305, -74.0788855],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_263d0e9e02494a8ab1100c00e09ff245 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_16c87bfbd0fa4035b4c268344407761c = $(`<div id="html_16c87bfbd0fa4035b4c268344407761c" style="width: 100.0%; height: 100.0%;">MLK Light Rail<br>                 latitude: 40.7111305<br>                  longtitude: -74.0788855</div>`)[0];
+                popup_263d0e9e02494a8ab1100c00e09ff245.setContent(html_16c87bfbd0fa4035b4c268344407761c);
+            
+
+            circle_marker_56c2d3a3b2d248b1b029f9aac8e10694.bindPopup(popup_263d0e9e02494a8ab1100c00e09ff245)
+            ;
+
+            
+        
+    
+            var circle_marker_35cf9de873f644a0810953709925a580 = L.circleMarker(
+                [40.737711, -74.066921],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_88086799bac44abd8668c7765c339b6b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d81b413a0e704ef89b31bdfd8bc9ca03 = $(`<div id="html_d81b413a0e704ef89b31bdfd8bc9ca03" style="width: 100.0%; height: 100.0%;">Dey St<br>                 latitude: 40.737711<br>                  longtitude: -74.066921</div>`)[0];
+                popup_88086799bac44abd8668c7765c339b6b.setContent(html_d81b413a0e704ef89b31bdfd8bc9ca03);
+            
+
+            circle_marker_35cf9de873f644a0810953709925a580.bindPopup(popup_88086799bac44abd8668c7765c339b6b)
+            ;
+
+            
+        
+    
+            var circle_marker_08d42e17fde7456e9210123de60b9c7b = L.circleMarker(
+                [40.7272235, -74.0337589],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_4e253f69b4af4d7787c741854ce72dfe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4312c11c3dea46debf6010fd2aef1be8 = $(`<div id="html_4312c11c3dea46debf6010fd2aef1be8" style="width: 100.0%; height: 100.0%;">Newport PATH<br>                 latitude: 40.7272235<br>                  longtitude: -74.0337589</div>`)[0];
+                popup_4e253f69b4af4d7787c741854ce72dfe.setContent(html_4312c11c3dea46debf6010fd2aef1be8);
+            
+
+            circle_marker_08d42e17fde7456e9210123de60b9c7b.bindPopup(popup_4e253f69b4af4d7787c741854ce72dfe)
+            ;
+
+            
+        
+    
+            var circle_marker_0ef3a9484c834ab19913c1f6c6894e30 = L.circleMarker(
+                [40.72759597, -74.04424731],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_d8954695019847148781425e2852d7b9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_84b85f195d9e4b4e80e873c67e33a24e = $(`<div id="html_84b85f195d9e4b4e80e873c67e33a24e" style="width: 100.0%; height: 100.0%;">Hamilton Park<br>                 latitude: 40.72759597<br>                  longtitude: -74.04424731</div>`)[0];
+                popup_d8954695019847148781425e2852d7b9.setContent(html_84b85f195d9e4b4e80e873c67e33a24e);
+            
+
+            circle_marker_0ef3a9484c834ab19913c1f6c6894e30.bindPopup(popup_d8954695019847148781425e2852d7b9)
+            ;
+
+            
+        
+    
+            var circle_marker_78335e3ff10e44ddafd83aa12d7352e2 = L.circleMarker(
+                [40.71653978, -74.04963791],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_b67b8a7a43f04499b9eae7213413d72f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4774bcc2f3154160a281eb9217c8c9e0 = $(`<div id="html_4774bcc2f3154160a281eb9217c8c9e0" style="width: 100.0%; height: 100.0%;">JC Medical Center<br>                 latitude: 40.71653978<br>                  longtitude: -74.04963791</div>`)[0];
+                popup_b67b8a7a43f04499b9eae7213413d72f.setContent(html_4774bcc2f3154160a281eb9217c8c9e0);
+            
+
+            circle_marker_78335e3ff10e44ddafd83aa12d7352e2.bindPopup(popup_b67b8a7a43f04499b9eae7213413d72f)
+            ;
+
+            
+        
+    
+            var circle_marker_2acd7df5842841d38a55cdf420845c73 = L.circleMarker(
+                [40.7311689, -74.0575736],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_ceb4603d2806471fb3e77fde7e3d6ed2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d0353df9b5f744aebdb3519536ed115e = $(`<div id="html_d0353df9b5f744aebdb3519536ed115e" style="width: 100.0%; height: 100.0%;">Hilltop<br>                 latitude: 40.7311689<br>                  longtitude: -74.0575736</div>`)[0];
+                popup_ceb4603d2806471fb3e77fde7e3d6ed2.setContent(html_d0353df9b5f744aebdb3519536ed115e);
+            
+
+            circle_marker_2acd7df5842841d38a55cdf420845c73.bindPopup(popup_ceb4603d2806471fb3e77fde7e3d6ed2)
+            ;
+
+            
+        
+    
+            var circle_marker_a2e77fd390074cdca58a8127a6821127 = L.circleMarker(
+                [40.7376037, -74.0524783],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_ae77c7e4fb944fedb06674ec412e029e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e041453d39a74d4289f18598df48a3c4 = $(`<div id="html_e041453d39a74d4289f18598df48a3c4" style="width: 100.0%; height: 100.0%;">Oakland Ave<br>                 latitude: 40.7376037<br>                  longtitude: -74.0524783</div>`)[0];
+                popup_ae77c7e4fb944fedb06674ec412e029e.setContent(html_e041453d39a74d4289f18598df48a3c4);
+            
+
+            circle_marker_a2e77fd390074cdca58a8127a6821127.bindPopup(popup_ae77c7e4fb944fedb06674ec412e029e)
+            ;
+
+            
+        
+    
+            var circle_marker_3567691ba2274fe7a3e07adaf6423c06 = L.circleMarker(
+                [40.7241765, -74.0506564],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e3898a9eee1b444a84791ac4d865bdde = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3428e41d797342b7b2b82001d026e9f1 = $(`<div id="html_3428e41d797342b7b2b82001d026e9f1" style="width: 100.0%; height: 100.0%;">Brunswick St<br>                 latitude: 40.7241765<br>                  longtitude: -74.0506564</div>`)[0];
+                popup_e3898a9eee1b444a84791ac4d865bdde.setContent(html_3428e41d797342b7b2b82001d026e9f1);
+            
+
+            circle_marker_3567691ba2274fe7a3e07adaf6423c06.bindPopup(popup_e3898a9eee1b444a84791ac4d865bdde)
+            ;
+
+            
+        
+    
+            var circle_marker_10cf88a6b78b4a9da6abe8efa6eed701 = L.circleMarker(
+                [40.74267714, -74.05178863],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_4020e6dc864348dab226fe45fe2eebcc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_11ecc416fa0e4ad6be9ece49d546a4eb = $(`<div id="html_11ecc416fa0e4ad6be9ece49d546a4eb" style="width: 100.0%; height: 100.0%;">Pershing Field<br>                 latitude: 40.74267714<br>                  longtitude: -74.05178863</div>`)[0];
+                popup_4020e6dc864348dab226fe45fe2eebcc.setContent(html_11ecc416fa0e4ad6be9ece49d546a4eb);
+            
+
+            circle_marker_10cf88a6b78b4a9da6abe8efa6eed701.bindPopup(popup_4020e6dc864348dab226fe45fe2eebcc)
+            ;
+
+            
+        
+    
+            var circle_marker_e2ee3cbd96694ad2a89cd099c2a7acee = L.circleMarker(
+                [40.72152515, -74.04630454],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e8c0b1d586434fe0a5bf404868a674cc = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2c291e80be2f41af9c4d9011d21fee5f = $(`<div id="html_2c291e80be2f41af9c4d9011d21fee5f" style="width: 100.0%; height: 100.0%;">Newark Ave<br>                 latitude: 40.72152515<br>                  longtitude: -74.04630454</div>`)[0];
+                popup_e8c0b1d586434fe0a5bf404868a674cc.setContent(html_2c291e80be2f41af9c4d9011d21fee5f);
+            
+
+            circle_marker_e2ee3cbd96694ad2a89cd099c2a7acee.bindPopup(popup_e8c0b1d586434fe0a5bf404868a674cc)
+            ;
+
+            
+        
+    
+            var circle_marker_4ffc2936772e42a2a207b1d3141ae687 = L.circleMarker(
+                [40.73478582, -74.05044364],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_86c1d387b7ed4ec1a1ce605bf67eb450 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8af6a09ef9214f4fad99a515523ea210 = $(`<div id="html_8af6a09ef9214f4fad99a515523ea210" style="width: 100.0%; height: 100.0%;">Christ Hospital<br>                 latitude: 40.73478582<br>                  longtitude: -74.05044364</div>`)[0];
+                popup_86c1d387b7ed4ec1a1ce605bf67eb450.setContent(html_8af6a09ef9214f4fad99a515523ea210);
+            
+
+            circle_marker_4ffc2936772e42a2a207b1d3141ae687.bindPopup(popup_86c1d387b7ed4ec1a1ce605bf67eb450)
+            ;
+
+            
+        
+    
+            var circle_marker_e499dfc1636244b5b3eaf82bd1b29693 = L.circleMarker(
+                [40.71848892, -74.04772663],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_65ba579e1342429092be2d78baf1c2d6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bea10886b3fe4b4ba6cc3a0410021b20 = $(`<div id="html_bea10886b3fe4b4ba6cc3a0410021b20" style="width: 100.0%; height: 100.0%;">Van Vorst Park<br>                 latitude: 40.71848892<br>                  longtitude: -74.04772663</div>`)[0];
+                popup_65ba579e1342429092be2d78baf1c2d6.setContent(html_bea10886b3fe4b4ba6cc3a0410021b20);
+            
+
+            circle_marker_e499dfc1636244b5b3eaf82bd1b29693.bindPopup(popup_65ba579e1342429092be2d78baf1c2d6)
+            ;
+
+            
+        
+    
+            var circle_marker_df830211bd384a79884200045faaae8a = L.circleMarker(
+                [40.7127742, -74.0364857],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_cbca20a99611483589e02223617c72dd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8611b0355f84a02a851f77c1514b087 = $(`<div id="html_b8611b0355f84a02a851f77c1514b087" style="width: 100.0%; height: 100.0%;">Essex Light Rail<br>                 latitude: 40.7127742<br>                  longtitude: -74.0364857</div>`)[0];
+                popup_cbca20a99611483589e02223617c72dd.setContent(html_b8611b0355f84a02a851f77c1514b087);
+            
+
+            circle_marker_df830211bd384a79884200045faaae8a.bindPopup(popup_cbca20a99611483589e02223617c72dd)
+            ;
+
+            
+        
+    
+            var circle_marker_6e5a719caa644343be7aa95ea01644a9 = L.circleMarker(
+                [40.6970299, -74.0969366],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a31ccbd3cdc64e89ba45a09f0e121f42 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_73230898065e4d25aed0b5cb94b5e255 = $(`<div id="html_73230898065e4d25aed0b5cb94b5e255" style="width: 100.0%; height: 100.0%;">Columbia Park<br>                 latitude: 40.6970299<br>                  longtitude: -74.0969366</div>`)[0];
+                popup_a31ccbd3cdc64e89ba45a09f0e121f42.setContent(html_73230898065e4d25aed0b5cb94b5e255);
+            
+
+            circle_marker_6e5a719caa644343be7aa95ea01644a9.bindPopup(popup_a31ccbd3cdc64e89ba45a09f0e121f42)
+            ;
+
+            
+        
+    
+            var circle_marker_23d561ccdf384a1a94311b89dc76eb17 = L.circleMarker(
+                [40.69865054, -74.08207968],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_cc0da67812634b6db8d69f2f648b15fa = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a36c8066658f4592b6cb292f1c5f2ef6 = $(`<div id="html_a36c8066658f4592b6cb292f1c5f2ef6" style="width: 100.0%; height: 100.0%;">Bayside Park<br>                 latitude: 40.69865054<br>                  longtitude: -74.08207968</div>`)[0];
+                popup_cc0da67812634b6db8d69f2f648b15fa.setContent(html_a36c8066658f4592b6cb292f1c5f2ef6);
+            
+
+            circle_marker_23d561ccdf384a1a94311b89dc76eb17.bindPopup(popup_cc0da67812634b6db8d69f2f648b15fa)
+            ;
+
+            
+        
+    
+            var circle_marker_0a705d5fdffb4f77b46ab2d1a254aa9e = L.circleMarker(
+                [40.73496102, -74.05950308],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_2d7e6e5286b04aa5b23c81bcd20f1819 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cc786fc3495742d4ab90570b2d9185ef = $(`<div id="html_cc786fc3495742d4ab90570b2d9185ef" style="width: 100.0%; height: 100.0%;">5 Corners Library<br>                 latitude: 40.73496102<br>                  longtitude: -74.05950308</div>`)[0];
+                popup_2d7e6e5286b04aa5b23c81bcd20f1819.setContent(html_cc786fc3495742d4ab90570b2d9185ef);
+            
+
+            circle_marker_0a705d5fdffb4f77b46ab2d1a254aa9e.bindPopup(popup_2d7e6e5286b04aa5b23c81bcd20f1819)
+            ;
+
+            
+        
+    
+            var circle_marker_27f3a5084d024ed4845f559423372351 = L.circleMarker(
+                [40.7236589, -74.0641943],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_779610c810ed421398c138a662027dcf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8c132b383c10464298e3ccca6ebeddac = $(`<div id="html_8c132b383c10464298e3ccca6ebeddac" style="width: 100.0%; height: 100.0%;">Baldwin at Montgomery<br>                 latitude: 40.7236589<br>                  longtitude: -74.0641943</div>`)[0];
+                popup_779610c810ed421398c138a662027dcf.setContent(html_8c132b383c10464298e3ccca6ebeddac);
+            
+
+            circle_marker_27f3a5084d024ed4845f559423372351.bindPopup(popup_779610c810ed421398c138a662027dcf)
+            ;
+
+            
+        
+    
+            var circle_marker_d4b5e122f10441bfaa784160a09d07c9 = L.circleMarker(
+                [40.71241882, -74.03852552],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_11dc1c789bd94d598139ef0524c61e1f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_60a1d7e9799246a58018f72853387703 = $(`<div id="html_60a1d7e9799246a58018f72853387703" style="width: 100.0%; height: 100.0%;">Morris Canal<br>                 latitude: 40.71241882<br>                  longtitude: -74.03852552</div>`)[0];
+                popup_11dc1c789bd94d598139ef0524c61e1f.setContent(html_60a1d7e9799246a58018f72853387703);
+            
+
+            circle_marker_d4b5e122f10441bfaa784160a09d07c9.bindPopup(popup_11dc1c789bd94d598139ef0524c61e1f)
+            ;
+
+            
+        
+    
+            var circle_marker_1165ecc9af8046e1935dc2326406965e = L.circleMarker(
+                [40.71346383, -74.06285852],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_9a0e10f1e0ae42a4b83b7044dad9a77b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bbbe1bdf741845a8bb0e42bf783f2de9 = $(`<div id="html_bbbe1bdf741845a8bb0e42bf783f2de9" style="width: 100.0%; height: 100.0%;">Lafayette Park<br>                 latitude: 40.71346383<br>                  longtitude: -74.06285852</div>`)[0];
+                popup_9a0e10f1e0ae42a4b83b7044dad9a77b.setContent(html_bbbe1bdf741845a8bb0e42bf783f2de9);
+            
+
+            circle_marker_1165ecc9af8046e1935dc2326406965e.bindPopup(popup_9a0e10f1e0ae42a4b83b7044dad9a77b)
+            ;
+
+            
+        
+    
+            var circle_marker_15918c3a1cf34c5cb3dd569ef848a0d1 = L.circleMarker(
+                [40.72601173, -74.05038893],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_d1bd6c1290c845739eefdf55b0723807 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_963e70842fcc4493ac21f7569c5a0038 = $(`<div id="html_963e70842fcc4493ac21f7569c5a0038" style="width: 100.0%; height: 100.0%;">Brunswick & 6th<br>                 latitude: 40.72601173<br>                  longtitude: -74.05038893</div>`)[0];
+                popup_d1bd6c1290c845739eefdf55b0723807.setContent(html_963e70842fcc4493ac21f7569c5a0038);
+            
+
+            circle_marker_15918c3a1cf34c5cb3dd569ef848a0d1.bindPopup(popup_d1bd6c1290c845739eefdf55b0723807)
+            ;
+
+            
+        
+    
+            var circle_marker_f55740fc803745c9b5269209e444c400 = L.circleMarker(
+                [40.72528911, -74.04557168],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a0fc7ad2b57140f595f8768680987310 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_36f12f6c98b840c78f6d08441c576d27 = $(`<div id="html_36f12f6c98b840c78f6d08441c576d27" style="width: 100.0%; height: 100.0%;">Jersey & 6th St<br>                 latitude: 40.72528911<br>                  longtitude: -74.04557168</div>`)[0];
+                popup_a0fc7ad2b57140f595f8768680987310.setContent(html_36f12f6c98b840c78f6d08441c576d27);
+            
+
+            circle_marker_f55740fc803745c9b5269209e444c400.bindPopup(popup_a0fc7ad2b57140f595f8768680987310)
+            ;
+
+            
+        
+    
+            var circle_marker_cd553b2a70e24e0e83b82d26cc66c528 = L.circleMarker(
+                [40.69263997, -74.08801228],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_0cca266a28664314ac837b51687e100a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0c6c89fbb58648778db19d6766d31f56 = $(`<div id="html_0c6c89fbb58648778db19d6766d31f56" style="width: 100.0%; height: 100.0%;">Danforth Light Rail<br>                 latitude: 40.69263997<br>                  longtitude: -74.08801228</div>`)[0];
+                popup_0cca266a28664314ac837b51687e100a.setContent(html_0c6c89fbb58648778db19d6766d31f56);
+            
+
+            circle_marker_cd553b2a70e24e0e83b82d26cc66c528.bindPopup(popup_0cca266a28664314ac837b51687e100a)
+            ;
+
+            
+        
+    
+            var circle_marker_e5e8f3a9d98446069a332f0a9d0c44bb = L.circleMarker(
+                [40.72333159, -74.04595256],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_d7bf54e968a6469486a03997945e4147 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_45d804fb916e4320b24346c631377837 = $(`<div id="html_45d804fb916e4320b24346c631377837" style="width: 100.0%; height: 100.0%;">Jersey & 3rd<br>                 latitude: 40.72333159<br>                  longtitude: -74.04595256</div>`)[0];
+                popup_d7bf54e968a6469486a03997945e4147.setContent(html_45d804fb916e4320b24346c631377837);
+            
+
+            circle_marker_e5e8f3a9d98446069a332f0a9d0c44bb.bindPopup(popup_d7bf54e968a6469486a03997945e4147)
+            ;
+
+            
+        
+    
+            var circle_marker_862e0a02e1c94a2d94b34b22aca1c95f = L.circleMarker(
+                [40.72165072, -74.04288411],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_2eceb72f563441e188430c6030996d70 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6e4e04eaf98b4c05b247c90ea5b54327 = $(`<div id="html_6e4e04eaf98b4c05b247c90ea5b54327" style="width: 100.0%; height: 100.0%;">Manila & 1st<br>                 latitude: 40.72165072<br>                  longtitude: -74.04288411</div>`)[0];
+                popup_2eceb72f563441e188430c6030996d70.setContent(html_6e4e04eaf98b4c05b247c90ea5b54327);
+            
+
+            circle_marker_862e0a02e1c94a2d94b34b22aca1c95f.bindPopup(popup_2eceb72f563441e188430c6030996d70)
+            ;
+
+            
+        
+    
+            var circle_marker_30645580dac84dce9e870f95aa64f00d = L.circleMarker(
+                [40.70495752, -74.08593088],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e273c215e5f24b3db87c3451a8e0fdee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2c87fe61741b4d15ae7cd8613b3e7fb2 = $(`<div id="html_2c87fe61741b4d15ae7cd8613b3e7fb2" style="width: 100.0%; height: 100.0%;">Bethune Center<br>                 latitude: 40.70495752<br>                  longtitude: -74.08593088</div>`)[0];
+                popup_e273c215e5f24b3db87c3451a8e0fdee.setContent(html_2c87fe61741b4d15ae7cd8613b3e7fb2);
+            
+
+            circle_marker_30645580dac84dce9e870f95aa64f00d.bindPopup(popup_e273c215e5f24b3db87c3451a8e0fdee)
+            ;
+
+            
+        
+    
+            var circle_marker_4995952b711c40e381959080c7149abc = L.circleMarker(
+                [40.7183552, -74.03891444],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e4e936f5ff0e48a28b82a7154b07c993 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_588ee9f1cb9940f5a95fcaa86f6ac43e = $(`<div id="html_588ee9f1cb9940f5a95fcaa86f6ac43e" style="width: 100.0%; height: 100.0%;">Columbus Drive<br>                 latitude: 40.7183552<br>                  longtitude: -74.03891444</div>`)[0];
+                popup_e4e936f5ff0e48a28b82a7154b07c993.setContent(html_588ee9f1cb9940f5a95fcaa86f6ac43e);
+            
+
+            circle_marker_4995952b711c40e381959080c7149abc.bindPopup(popup_e4e936f5ff0e48a28b82a7154b07c993)
+            ;
+
+            
+        
+    
+            var circle_marker_7ca7050f497f4c6d929e3fabb88e578c = L.circleMarker(
+                [40.71458404, -74.04281706],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c998014c4830412a88bee79a06863de3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e365250e88a4424ca7083a2b148fde36 = $(`<div id="html_e365250e88a4424ca7083a2b148fde36" style="width: 100.0%; height: 100.0%;">Marin Light Rail<br>                 latitude: 40.71458404<br>                  longtitude: -74.04281706</div>`)[0];
+                popup_c998014c4830412a88bee79a06863de3.setContent(html_e365250e88a4424ca7083a2b148fde36);
+            
+
+            circle_marker_7ca7050f497f4c6d929e3fabb88e578c.bindPopup(popup_c998014c4830412a88bee79a06863de3)
+            ;
+
+            
+        
+    
+            var circle_marker_d1d3574f04474507be7cf14da9d117a6 = L.circleMarker(
+                [40.71435837, -74.06661093],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_96385755f3b042359743cc3078c24c43 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0170b78cf2e14fcf9200f131168574a1 = $(`<div id="html_0170b78cf2e14fcf9200f131168574a1" style="width: 100.0%; height: 100.0%;">Communipaw & Berry Lane<br>                 latitude: 40.71435837<br>                  longtitude: -74.06661093</div>`)[0];
+                popup_96385755f3b042359743cc3078c24c43.setContent(html_0170b78cf2e14fcf9200f131168574a1);
+            
+
+            circle_marker_d1d3574f04474507be7cf14da9d117a6.bindPopup(popup_96385755f3b042359743cc3078c24c43)
+            ;
+
+            
+        
+    
+            var circle_marker_cad5eeba81714e69933965963f82aa87 = L.circleMarker(
+                [40.72568548, -74.04879034],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_3355d9208f704bb9aca897832b4d812d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c7ab96583f34244a2c4ce957a7777ce = $(`<div id="html_6c7ab96583f34244a2c4ce957a7777ce" style="width: 100.0%; height: 100.0%;">Monmouth and 6th<br>                 latitude: 40.72568548<br>                  longtitude: -74.04879034</div>`)[0];
+                popup_3355d9208f704bb9aca897832b4d812d.setContent(html_6c7ab96583f34244a2c4ce957a7777ce);
+            
+
+            circle_marker_cad5eeba81714e69933965963f82aa87.bindPopup(popup_3355d9208f704bb9aca897832b4d812d)
+            ;
+
+            
+        
+    
+            var circle_marker_48d837a832b8470b9ee9f0c2c3d6a567 = L.circleMarker(
+                [40.72163014, -74.04996783],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_940e22218ddc411b9e47de73c0a5c32d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1a3b9f48c549434da23effe2218e4c88 = $(`<div id="html_1a3b9f48c549434da23effe2218e4c88" style="width: 100.0%; height: 100.0%;">Dixon Mills<br>                 latitude: 40.72163014<br>                  longtitude: -74.04996783</div>`)[0];
+                popup_940e22218ddc411b9e47de73c0a5c32d.setContent(html_1a3b9f48c549434da23effe2218e4c88);
+            
+
+            circle_marker_48d837a832b8470b9ee9f0c2c3d6a567.bindPopup(popup_940e22218ddc411b9e47de73c0a5c32d)
+            ;
+
+            
+        
+    
+            var circle_marker_75422ee5d8dc4cdfbb31d0d20816ba3b = L.circleMarker(
+                [40.7192822, -74.07126188],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_acbc91ce503545f99afcffb2c75526ad = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c075ace50a148c59270fd493cb9ec52 = $(`<div id="html_6c075ace50a148c59270fd493cb9ec52" style="width: 100.0%; height: 100.0%;">Astor Place<br>                 latitude: 40.7192822<br>                  longtitude: -74.07126188</div>`)[0];
+                popup_acbc91ce503545f99afcffb2c75526ad.setContent(html_6c075ace50a148c59270fd493cb9ec52);
+            
+
+            circle_marker_75422ee5d8dc4cdfbb31d0d20816ba3b.bindPopup(popup_acbc91ce503545f99afcffb2c75526ad)
+            ;
+
+            
+        
+    
+            var circle_marker_5e0585920c6749e7aec1569c5cea489d = L.circleMarker(
+                [40.74590997, -74.05727148],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_d845970593e14b639499629a17ce035f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9928d52b6b5b4bffb2dd78770629672e = $(`<div id="html_9928d52b6b5b4bffb2dd78770629672e" style="width: 100.0%; height: 100.0%;">Leonard Gordon Park<br>                 latitude: 40.74590997<br>                  longtitude: -74.05727148</div>`)[0];
+                popup_d845970593e14b639499629a17ce035f.setContent(html_9928d52b6b5b4bffb2dd78770629672e);
+            
+
+            circle_marker_5e0585920c6749e7aec1569c5cea489d.bindPopup(popup_d845970593e14b639499629a17ce035f)
+            ;
+
+            
+        
+    
+            var circle_marker_a3df0193490b410dbc4c56c047a6398a = L.circleMarker(
+                [40.70965083, -74.06860113],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_f6b48c2d9dc542bfb63e90fcd7b4b881 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d7522a41f5214cce9d5e653279bd1087 = $(`<div id="html_d7522a41f5214cce9d5e653279bd1087" style="width: 100.0%; height: 100.0%;">JCBS Depot<br>                 latitude: 40.70965083<br>                  longtitude: -74.06860113</div>`)[0];
+                popup_f6b48c2d9dc542bfb63e90fcd7b4b881.setContent(html_d7522a41f5214cce9d5e653279bd1087);
+            
+
+            circle_marker_a3df0193490b410dbc4c56c047a6398a.bindPopup(popup_f6b48c2d9dc542bfb63e90fcd7b4b881)
+            ;
+
+            
+        
+    
+            var circle_marker_24ef480e6a534ba7aa83733270a712e4 = L.circleMarker(
+                [40.71649, -74.04105],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1fbf2c3bc9a14292a48b7c0aec4fac99 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c5666a4d7224069a88a09563cbbbf9f = $(`<div id="html_6c5666a4d7224069a88a09563cbbbf9f" style="width: 100.0%; height: 100.0%;">York St<br>                 latitude: 40.71649<br>                  longtitude: -74.04105</div>`)[0];
+                popup_1fbf2c3bc9a14292a48b7c0aec4fac99.setContent(html_6c5666a4d7224069a88a09563cbbbf9f);
+            
+
+            circle_marker_24ef480e6a534ba7aa83733270a712e4.bindPopup(popup_1fbf2c3bc9a14292a48b7c0aec4fac99)
+            ;
+
+            
+        
+    
+            var circle_marker_48f1f6ec4d6b434cb1bcc10811389a5c = L.circleMarker(
+                [40.7242941, -74.0354826],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_4378af8f9a3d416bb9cb242d68c2276c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_244de7b1916e44539b3c2c44d610b56f = $(`<div id="html_244de7b1916e44539b3c2c44d610b56f" style="width: 100.0%; height: 100.0%;">Washington St<br>                 latitude: 40.7242941<br>                  longtitude: -74.0354826</div>`)[0];
+                popup_4378af8f9a3d416bb9cb242d68c2276c.setContent(html_244de7b1916e44539b3c2c44d610b56f);
+            
+
+            circle_marker_48f1f6ec4d6b434cb1bcc10811389a5c.bindPopup(popup_4378af8f9a3d416bb9cb242d68c2276c)
+            ;
+
+            
+        
+    
+            var circle_marker_f63d8b5e40a14d0896ee9e0addc518e5 = L.circleMarker(
+                [40.7192517, -74.034234],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_dfb74a60305c485c81da1fe5a7404b91 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_408f4ebad6464578a79880207352ea73 = $(`<div id="html_408f4ebad6464578a79880207352ea73" style="width: 100.0%; height: 100.0%;">Harborside<br>                 latitude: 40.7192517<br>                  longtitude: -74.034234</div>`)[0];
+                popup_dfb74a60305c485c81da1fe5a7404b91.setContent(html_408f4ebad6464578a79880207352ea73);
+            
+
+            circle_marker_f63d8b5e40a14d0896ee9e0addc518e5.bindPopup(popup_dfb74a60305c485c81da1fe5a7404b91)
+            ;
+
+            
+        
+    
+            var circle_marker_a8dc73e789cc470e9784423ce5388a88 = L.circleMarker(
+                [40.73367, -74.0625],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_0d52f225537b43048a075e55cc2bf9eb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_03a1601a6dbd44bc96ba7d78d9ac7bdb = $(`<div id="html_03a1601a6dbd44bc96ba7d78d9ac7bdb" style="width: 100.0%; height: 100.0%;">Journal Square<br>                 latitude: 40.73367<br>                  longtitude: -74.0625</div>`)[0];
+                popup_0d52f225537b43048a075e55cc2bf9eb.setContent(html_03a1601a6dbd44bc96ba7d78d9ac7bdb);
+            
+
+            circle_marker_a8dc73e789cc470e9784423ce5388a88.bindPopup(popup_0d52f225537b43048a075e55cc2bf9eb)
+            ;
+
+            
+        
+    
+            var circle_marker_ec3408aae7ee430f839d6f41bdad201f = L.circleMarker(
+                [40.71942, -74.05099],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_d25ac7559705444aa2b9e9995b815a9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fd0e645c5a3f4a938419db1cd8e8c1ab = $(`<div id="html_fd0e645c5a3f4a938419db1cd8e8c1ab" style="width: 100.0%; height: 100.0%;">Montgomery St<br>                 latitude: 40.71942<br>                  longtitude: -74.05099</div>`)[0];
+                popup_d25ac7559705444aa2b9e9995b815a9f.setContent(html_fd0e645c5a3f4a938419db1cd8e8c1ab);
+            
+
+            circle_marker_ec3408aae7ee430f839d6f41bdad201f.bindPopup(popup_d25ac7559705444aa2b9e9995b815a9f)
+            ;
+
+            
+        
+    
+            var circle_marker_9c9d65885a024c95929f725a830e2221 = L.circleMarker(
+                [40.72755147, -74.07106072],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e405f5b9ae8e4a7a851967e180d40ed3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ce176b1ee6eb49bb9fc3e8a9b4e23a38 = $(`<div id="html_ce176b1ee6eb49bb9fc3e8a9b4e23a38" style="width: 100.0%; height: 100.0%;">Glenwood Ave<br>                 latitude: 40.72755147<br>                  longtitude: -74.07106072</div>`)[0];
+                popup_e405f5b9ae8e4a7a851967e180d40ed3.setContent(html_ce176b1ee6eb49bb9fc3e8a9b4e23a38);
+            
+
+            circle_marker_9c9d65885a024c95929f725a830e2221.bindPopup(popup_e405f5b9ae8e4a7a851967e180d40ed3)
+            ;
+
+            
+        
+    
+            var circle_marker_8f0efa34813040a9b51da9e0c1b81868 = L.circleMarker(
+                [40.72572614, -74.07195926],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_470fe82ca6b642adad061a06162491a4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4fabfcc3c5304f87803830651648e5c3 = $(`<div id="html_4fabfcc3c5304f87803830651648e5c3" style="width: 100.0%; height: 100.0%;">Fairmount Ave<br>                 latitude: 40.72572614<br>                  longtitude: -74.07195926</div>`)[0];
+                popup_470fe82ca6b642adad061a06162491a4.setContent(html_4fabfcc3c5304f87803830651648e5c3);
+            
+
+            circle_marker_8f0efa34813040a9b51da9e0c1b81868.bindPopup(popup_470fe82ca6b642adad061a06162491a4)
+            ;
+
+            
+        
+    
+            var circle_marker_fe6a2a72e01549eb8f62bfda02da1890 = L.circleMarker(
+                [40.72210379, -74.071455],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_5f84ac0947c84a6cbab312ca4aa43b3f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b3cef8ffefba499496064e472a65ef7b = $(`<div id="html_b3cef8ffefba499496064e472a65ef7b" style="width: 100.0%; height: 100.0%;">Bergen Ave<br>                 latitude: 40.72210379<br>                  longtitude: -74.071455</div>`)[0];
+                popup_5f84ac0947c84a6cbab312ca4aa43b3f.setContent(html_b3cef8ffefba499496064e472a65ef7b);
+            
+
+            circle_marker_fe6a2a72e01549eb8f62bfda02da1890.bindPopup(popup_5f84ac0947c84a6cbab312ca4aa43b3f)
+            ;
+
+            
+        
+    
+            var circle_marker_738d26f9dc304030969116af4a9e0f96 = L.circleMarker(
+                [40.71517768, -74.03768331],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_7e92a35523534ff38ab8cb6e63943c25 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_051a15d0991944dd86e500e72456630f = $(`<div id="html_051a15d0991944dd86e500e72456630f" style="width: 100.0%; height: 100.0%;">Grand St<br>                 latitude: 40.71517768<br>                  longtitude: -74.03768331</div>`)[0];
+                popup_7e92a35523534ff38ab8cb6e63943c25.setContent(html_051a15d0991944dd86e500e72456630f);
+            
+
+            circle_marker_738d26f9dc304030969116af4a9e0f96.bindPopup(popup_7e92a35523534ff38ab8cb6e63943c25)
+            ;
+
+            
+        
+    
+            var circle_marker_e16f936763334bba9cb6783cca093c41 = L.circleMarker(
+                [40.71113, -74.0789],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_365c968a549245adb0c3bfcd8a40cdc7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_27df76db9f224b9484aa2400debedf52 = $(`<div id="html_27df76db9f224b9484aa2400debedf52" style="width: 100.0%; height: 100.0%;">Jackson Square<br>                 latitude: 40.71113<br>                  longtitude: -74.0789</div>`)[0];
+                popup_365c968a549245adb0c3bfcd8a40cdc7.setContent(html_27df76db9f224b9484aa2400debedf52);
+            
+
+            circle_marker_e16f936763334bba9cb6783cca093c41.bindPopup(popup_365c968a549245adb0c3bfcd8a40cdc7)
+            ;
+
+            
+        
+    
+            var circle_marker_1742730e47f34d3cbda00124acaf619b = L.circleMarker(
+                [40.75992262, -73.97648516],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e1e2809bd1104c2d872c7ea4a63d5fb2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_79acca8b5d3c486fbaa587b942c92010 = $(`<div id="html_79acca8b5d3c486fbaa587b942c92010" style="width: 100.0%; height: 100.0%;">W 52 St & 5 Ave<br>                 latitude: 40.75992262<br>                  longtitude: -73.97648516</div>`)[0];
+                popup_e1e2809bd1104c2d872c7ea4a63d5fb2.setContent(html_79acca8b5d3c486fbaa587b942c92010);
+            
+
+            circle_marker_1742730e47f34d3cbda00124acaf619b.bindPopup(popup_e1e2809bd1104c2d872c7ea4a63d5fb2)
+            ;
+
+            
+        
+    
+            var circle_marker_78f83d3cb0dc40148802ee5c1743d40b = L.circleMarker(
+                [40.76087502, -74.00277668],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_2777d860bb394bfa8580b6ff8114efb0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c7b763d778244201b6eff0af94f8dd0c = $(`<div id="html_c7b763d778244201b6eff0af94f8dd0c" style="width: 100.0%; height: 100.0%;">12 Ave & W 40 St<br>                 latitude: 40.76087502<br>                  longtitude: -74.00277668</div>`)[0];
+                popup_2777d860bb394bfa8580b6ff8114efb0.setContent(html_c7b763d778244201b6eff0af94f8dd0c);
+            
+
+            circle_marker_78f83d3cb0dc40148802ee5c1743d40b.bindPopup(popup_2777d860bb394bfa8580b6ff8114efb0)
+            ;
+
+            
+        
+    
+            var circle_marker_b79782c4b171482cae21a6a47b8c82f1 = L.circleMarker(
+                [40.7153379, -74.01658354],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_8144897cd63549b88e9142781e10b519 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b34ab4e8083947bb9611aacf7b4aa5ed = $(`<div id="html_b34ab4e8083947bb9611aacf7b4aa5ed" style="width: 100.0%; height: 100.0%;">Vesey Pl & River Terrace<br>                 latitude: 40.7153379<br>                  longtitude: -74.01658354</div>`)[0];
+                popup_8144897cd63549b88e9142781e10b519.setContent(html_b34ab4e8083947bb9611aacf7b4aa5ed);
+            
+
+            circle_marker_b79782c4b171482cae21a6a47b8c82f1.bindPopup(popup_8144897cd63549b88e9142781e10b519)
+            ;
+
+            
+        
+    
+            var circle_marker_c02b451447f24b12af90ac83da3d9426 = L.circleMarker(
+                [40.72362738, -73.99949601],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_3ae745479d94455cb9497982fdd2d673 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_67bf1598aab14f20ada70844a41de52e = $(`<div id="html_67bf1598aab14f20ada70844a41de52e" style="width: 100.0%; height: 100.0%;">Mercer St & Spring St<br>                 latitude: 40.72362738<br>                  longtitude: -73.99949601</div>`)[0];
+                popup_3ae745479d94455cb9497982fdd2d673.setContent(html_67bf1598aab14f20ada70844a41de52e);
+            
+
+            circle_marker_c02b451447f24b12af90ac83da3d9426.bindPopup(popup_3ae745479d94455cb9497982fdd2d673)
+            ;
+
+            
+        
+    
+            var circle_marker_bb2c15d3f7c448759b99931b8f71cea6 = L.circleMarker(
+                [40.72243797, -74.00566443],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1d4212f92f05475abb213ddeef9cf41d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_61b51727fe294c1a9cd05fcf3c569e3b = $(`<div id="html_61b51727fe294c1a9cd05fcf3c569e3b" style="width: 100.0%; height: 100.0%;">6 Ave & Canal St<br>                 latitude: 40.72243797<br>                  longtitude: -74.00566443</div>`)[0];
+                popup_1d4212f92f05475abb213ddeef9cf41d.setContent(html_61b51727fe294c1a9cd05fcf3c569e3b);
+            
+
+            circle_marker_bb2c15d3f7c448759b99931b8f71cea6.bindPopup(popup_1d4212f92f05475abb213ddeef9cf41d)
+            ;
+
+            
+        
+    
+            var circle_marker_e6be082122614d968dd705b69c2358c1 = L.circleMarker(
+                [40.7149787, -74.013012],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_36387f5e176649158c04bbe810b893ea = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7d5690b02fb943c48c5d991d6623023c = $(`<div id="html_7d5690b02fb943c48c5d991d6623023c" style="width: 100.0%; height: 100.0%;">Murray St & West St<br>                 latitude: 40.7149787<br>                  longtitude: -74.013012</div>`)[0];
+                popup_36387f5e176649158c04bbe810b893ea.setContent(html_7d5690b02fb943c48c5d991d6623023c);
+            
+
+            circle_marker_e6be082122614d968dd705b69c2358c1.bindPopup(popup_36387f5e176649158c04bbe810b893ea)
+            ;
+
+            
+        
+    
+            var circle_marker_67366aa992e14f189e52ad1e6697663c = L.circleMarker(
+                [40.74691959, -74.00451887],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c6c37df091e14fea9efe4cee6fdbd2c4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_75a0b27fece0488f89d46a0f9d5c0107 = $(`<div id="html_75a0b27fece0488f89d46a0f9d5c0107" style="width: 100.0%; height: 100.0%;">W 22 St & 10 Ave<br>                 latitude: 40.74691959<br>                  longtitude: -74.00451887</div>`)[0];
+                popup_c6c37df091e14fea9efe4cee6fdbd2c4.setContent(html_75a0b27fece0488f89d46a0f9d5c0107);
+            
+
+            circle_marker_67366aa992e14f189e52ad1e6697663c.bindPopup(popup_c6c37df091e14fea9efe4cee6fdbd2c4)
+            ;
+
+            
+        
+    
+            var circle_marker_e7d80e3a5e6448c1989598dcdd868356 = L.circleMarker(
+                [40.813358, -73.956461],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e568c4b42575428497ca49af28aa227f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d156426e6abc4f2794bb62b1e40c0cfb = $(`<div id="html_d156426e6abc4f2794bb62b1e40c0cfb" style="width: 100.0%; height: 100.0%;">Amsterdam Ave & W 125 St<br>                 latitude: 40.813358<br>                  longtitude: -73.956461</div>`)[0];
+                popup_e568c4b42575428497ca49af28aa227f.setContent(html_d156426e6abc4f2794bb62b1e40c0cfb);
+            
+
+            circle_marker_e7d80e3a5e6448c1989598dcdd868356.bindPopup(popup_e568c4b42575428497ca49af28aa227f)
+            ;
+
+            
+        
+    
+            var circle_marker_68b12df194e144f58950921d5b403937 = L.circleMarker(
+                [40.74025878, -73.98409214],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_87c95c4803264d46aa90e090285c7e12 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b0e4e1d376642728a1449d956683ddd = $(`<div id="html_6b0e4e1d376642728a1449d956683ddd" style="width: 100.0%; height: 100.0%;">Lexington Ave & E 24 St<br>                 latitude: 40.74025878<br>                  longtitude: -73.98409214</div>`)[0];
+                popup_87c95c4803264d46aa90e090285c7e12.setContent(html_6b0e4e1d376642728a1449d956683ddd);
+            
+
+            circle_marker_68b12df194e144f58950921d5b403937.bindPopup(popup_87c95c4803264d46aa90e090285c7e12)
+            ;
+
+            
+        
+    
+            var circle_marker_128afcf7017e4834983be62127f18cc2 = L.circleMarker(
+                [40.701907, -74.013942],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a23eed6f71f54f7a8d0d4bb5dbc40fdb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef6cfbc0ddb847149edaec63455ea0ac = $(`<div id="html_ef6cfbc0ddb847149edaec63455ea0ac" style="width: 100.0%; height: 100.0%;">Bus Slip & State St<br>                 latitude: 40.701907<br>                  longtitude: -74.013942</div>`)[0];
+                popup_a23eed6f71f54f7a8d0d4bb5dbc40fdb.setContent(html_ef6cfbc0ddb847149edaec63455ea0ac);
+            
+
+            circle_marker_128afcf7017e4834983be62127f18cc2.bindPopup(popup_a23eed6f71f54f7a8d0d4bb5dbc40fdb)
+            ;
+
+            
+        
+    
+            var circle_marker_6d9a6d97c7da476ab98bd35c7b3bb1ca = L.circleMarker(
+                [40.7457121, -73.98194829],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_f388e9949dd0411bafe7fc3e56604141 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_756d42988e8f4e91a70cfa87f5fbb6fa = $(`<div id="html_756d42988e8f4e91a70cfa87f5fbb6fa" style="width: 100.0%; height: 100.0%;">E 32 St & Park Ave<br>                 latitude: 40.7457121<br>                  longtitude: -73.98194829</div>`)[0];
+                popup_f388e9949dd0411bafe7fc3e56604141.setContent(html_756d42988e8f4e91a70cfa87f5fbb6fa);
+            
+
+            circle_marker_6d9a6d97c7da476ab98bd35c7b3bb1ca.bindPopup(popup_f388e9949dd0411bafe7fc3e56604141)
+            ;
+
+            
+        
+    
+            var circle_marker_fe34590d22a0486fb9ac52c8184e6ed4 = L.circleMarker(
+                [40.6793307, -73.97519523],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_667955b72ad3465fa37c3b432c4df30c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ef3ce8b5b08a41f7b1b12b5f8a524494 = $(`<div id="html_ef3ce8b5b08a41f7b1b12b5f8a524494" style="width: 100.0%; height: 100.0%;">Prospect Pl & 6 Ave<br>                 latitude: 40.6793307<br>                  longtitude: -73.97519523</div>`)[0];
+                popup_667955b72ad3465fa37c3b432c4df30c.setContent(html_ef3ce8b5b08a41f7b1b12b5f8a524494);
+            
+
+            circle_marker_fe34590d22a0486fb9ac52c8184e6ed4.bindPopup(popup_667955b72ad3465fa37c3b432c4df30c)
+            ;
+
+            
+        
+    
+            var circle_marker_54326534d61849d08b7eeaad92affbf6 = L.circleMarker(
+                [40.711512, -74.015756],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c8c69298dfb348d88bcb782e8600123d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_46667d575ed247da876ba0f23ffaa804 = $(`<div id="html_46667d575ed247da876ba0f23ffaa804" style="width: 100.0%; height: 100.0%;">South End Ave & Liberty St<br>                 latitude: 40.711512<br>                  longtitude: -74.015756</div>`)[0];
+                popup_c8c69298dfb348d88bcb782e8600123d.setContent(html_46667d575ed247da876ba0f23ffaa804);
+            
+
+            circle_marker_54326534d61849d08b7eeaad92affbf6.bindPopup(popup_c8c69298dfb348d88bcb782e8600123d)
+            ;
+
+            
+        
+    
+            var circle_marker_703b180034e14ef7acf991ab2e1b657d = L.circleMarker(
+                [40.744219, -73.97121214],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_7e9a939eecc54ebdb0a811fccb4fc43f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_24dc29a84e0747d7b7b9cf4589ed5ae1 = $(`<div id="html_24dc29a84e0747d7b7b9cf4589ed5ae1" style="width: 100.0%; height: 100.0%;">FDR Drive & E 35 St<br>                 latitude: 40.744219<br>                  longtitude: -73.97121214</div>`)[0];
+                popup_7e9a939eecc54ebdb0a811fccb4fc43f.setContent(html_24dc29a84e0747d7b7b9cf4589ed5ae1);
+            
+
+            circle_marker_703b180034e14ef7acf991ab2e1b657d.bindPopup(popup_7e9a939eecc54ebdb0a811fccb4fc43f)
+            ;
+
+            
+        
+    
+            var circle_marker_901bf070a63941d392a0f9de1f3c2271 = L.circleMarker(
+                [40.71754834, -74.01322069],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_6314a108fda849cb910fb27702c636e5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e0ef1af4ed3642e99ebb1bd1c3b8fe01 = $(`<div id="html_e0ef1af4ed3642e99ebb1bd1c3b8fe01" style="width: 100.0%; height: 100.0%;">West St & Chambers St<br>                 latitude: 40.71754834<br>                  longtitude: -74.01322069</div>`)[0];
+                popup_6314a108fda849cb910fb27702c636e5.setContent(html_e0ef1af4ed3642e99ebb1bd1c3b8fe01);
+            
+
+            circle_marker_901bf070a63941d392a0f9de1f3c2271.bindPopup(popup_6314a108fda849cb910fb27702c636e5)
+            ;
+
+            
+        
+    
+            var circle_marker_2f30b245517f456b845cbf33e0b87788 = L.circleMarker(
+                [40.70463334, -74.01361706],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e9f25dc82fb344d388e3968f12e6a2ab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bb36d09f1ea94d25bd1d44e7edc2367e = $(`<div id="html_bb36d09f1ea94d25bd1d44e7edc2367e" style="width: 100.0%; height: 100.0%;">Broadway & Battery Pl<br>                 latitude: 40.70463334<br>                  longtitude: -74.01361706</div>`)[0];
+                popup_e9f25dc82fb344d388e3968f12e6a2ab.setContent(html_bb36d09f1ea94d25bd1d44e7edc2367e);
+            
+
+            circle_marker_2f30b245517f456b845cbf33e0b87788.bindPopup(popup_e9f25dc82fb344d388e3968f12e6a2ab)
+            ;
+
+            
+        
+    
+            var circle_marker_a17ee2f97efe42f2b792114fd1d8ff30 = L.circleMarker(
+                [40.711066, -74.009447],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1535c590924a4b8abcab7c0f94dfb91c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2e8762911f6a40aaae5c095b4555dd70 = $(`<div id="html_2e8762911f6a40aaae5c095b4555dd70" style="width: 100.0%; height: 100.0%;">Fulton St & Broadway<br>                 latitude: 40.711066<br>                  longtitude: -74.009447</div>`)[0];
+                popup_1535c590924a4b8abcab7c0f94dfb91c.setContent(html_2e8762911f6a40aaae5c095b4555dd70);
+            
+
+            circle_marker_a17ee2f97efe42f2b792114fd1d8ff30.bindPopup(popup_1535c590924a4b8abcab7c0f94dfb91c)
+            ;
+
+            
+        
+    
+            var circle_marker_0e55a4f89cc44c08a878ddffec68316c = L.circleMarker(
+                [40.76695317, -73.98169333],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c64413d0b7dc421e8e836440f3e94ee5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_02a74ab41b5b4353a64417300b417257 = $(`<div id="html_02a74ab41b5b4353a64417300b417257" style="width: 100.0%; height: 100.0%;">Broadway & W 58 St<br>                 latitude: 40.76695317<br>                  longtitude: -73.98169333</div>`)[0];
+                popup_c64413d0b7dc421e8e836440f3e94ee5.setContent(html_02a74ab41b5b4353a64417300b417257);
+            
+
+            circle_marker_0e55a4f89cc44c08a878ddffec68316c.bindPopup(popup_c64413d0b7dc421e8e836440f3e94ee5)
+            ;
+
+            
+        
+    
+            var circle_marker_a166c41ed6ae403f8c048a4b963ff983 = L.circleMarker(
+                [40.75594159, -74.0021163],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_7ec9730b07ca4100b1d5ae604794eb1e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d5c333a5091b4609be00832e4f4967ab = $(`<div id="html_d5c333a5091b4609be00832e4f4967ab" style="width: 100.0%; height: 100.0%;">W 34 St & 11 Ave<br>                 latitude: 40.75594159<br>                  longtitude: -74.0021163</div>`)[0];
+                popup_7ec9730b07ca4100b1d5ae604794eb1e.setContent(html_d5c333a5091b4609be00832e4f4967ab);
+            
+
+            circle_marker_a166c41ed6ae403f8c048a4b963ff983.bindPopup(popup_7ec9730b07ca4100b1d5ae604794eb1e)
+            ;
+
+            
+        
+    
+            var circle_marker_f89bb53357644df0908b7268117906d2 = L.circleMarker(
+                [40.74334935, -74.00681753],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1487efce3a504600b04a184799927ef6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f0d290e625142ba814282cd5227560d = $(`<div id="html_7f0d290e625142ba814282cd5227560d" style="width: 100.0%; height: 100.0%;">W 16 St & The High Line<br>                 latitude: 40.74334935<br>                  longtitude: -74.00681753</div>`)[0];
+                popup_1487efce3a504600b04a184799927ef6.setContent(html_7f0d290e625142ba814282cd5227560d);
+            
+
+            circle_marker_f89bb53357644df0908b7268117906d2.bindPopup(popup_1487efce3a504600b04a184799927ef6)
+            ;
+
+            
+        
+    
+            var circle_marker_09c8507aa3f945b2ab171bafe33308d9 = L.circleMarker(
+                [40.805973, -73.964928],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_f37e4087553e41dd83c7f06d4205a487 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_83527ea1c8044fae8539e765894c9657 = $(`<div id="html_83527ea1c8044fae8539e765894c9657" style="width: 100.0%; height: 100.0%;">W 113 St & Broadway<br>                 latitude: 40.805973<br>                  longtitude: -73.964928</div>`)[0];
+                popup_f37e4087553e41dd83c7f06d4205a487.setContent(html_83527ea1c8044fae8539e765894c9657);
+            
+
+            circle_marker_09c8507aa3f945b2ab171bafe33308d9.bindPopup(popup_f37e4087553e41dd83c7f06d4205a487)
+            ;
+
+            
+        
+    
+            var circle_marker_193e16fcb2e841f0842832971176cb5a = L.circleMarker(
+                [40.76370739, -73.9851615],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_560e921df6be4ad2b345be8bfc1d265e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad3e523f4d78454d90af951c34c7cbd1 = $(`<div id="html_ad3e523f4d78454d90af951c34c7cbd1" style="width: 100.0%; height: 100.0%;">8 Ave & W 52 St<br>                 latitude: 40.76370739<br>                  longtitude: -73.9851615</div>`)[0];
+                popup_560e921df6be4ad2b345be8bfc1d265e.setContent(html_ad3e523f4d78454d90af951c34c7cbd1);
+            
+
+            circle_marker_193e16fcb2e841f0842832971176cb5a.bindPopup(popup_560e921df6be4ad2b345be8bfc1d265e)
+            ;
+
+            
+        
+    
+            var circle_marker_ba3ec6ccb0df4027a349edaab0637694 = L.circleMarker(
+                [40.74901271, -73.98848395],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_7708d7dafe7b40fcb0ac786d8051f3ae = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_58165e16cae64d7485b99c94b2a8e500 = $(`<div id="html_58165e16cae64d7485b99c94b2a8e500" style="width: 100.0%; height: 100.0%;">6 Ave & W 33 St<br>                 latitude: 40.74901271<br>                  longtitude: -73.98848395</div>`)[0];
+                popup_7708d7dafe7b40fcb0ac786d8051f3ae.setContent(html_58165e16cae64d7485b99c94b2a8e500);
+            
+
+            circle_marker_ba3ec6ccb0df4027a349edaab0637694.bindPopup(popup_7708d7dafe7b40fcb0ac786d8051f3ae)
+            ;
+
+            
+        
+    
+            var circle_marker_af9518c8ca2b4aaa8108bf573013aa9e = L.circleMarker(
+                [40.69089272, -73.99612349],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_516689284c084c678dc4b4b8ca63f6d9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b5ef5f55efe6454b89607f85254a334e = $(`<div id="html_b5ef5f55efe6454b89607f85254a334e" style="width: 100.0%; height: 100.0%;">Henry St & Atlantic Ave<br>                 latitude: 40.69089272<br>                  longtitude: -73.99612349</div>`)[0];
+                popup_516689284c084c678dc4b4b8ca63f6d9.setContent(html_b5ef5f55efe6454b89607f85254a334e);
+            
+
+            circle_marker_af9518c8ca2b4aaa8108bf573013aa9e.bindPopup(popup_516689284c084c678dc4b4b8ca63f6d9)
+            ;
+
+            
+        
+    
+            var circle_marker_772e86f4ff074e75903ed175f9d8dc22 = L.circleMarker(
+                [40.68763155, -74.0016256],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_dbae1e9845534ba5aa8bdea03176f4e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a6c284a335e54ab4a33f365eea3260c7 = $(`<div id="html_a6c284a335e54ab4a33f365eea3260c7" style="width: 100.0%; height: 100.0%;">Columbia St & Kane St<br>                 latitude: 40.68763155<br>                  longtitude: -74.0016256</div>`)[0];
+                popup_dbae1e9845534ba5aa8bdea03176f4e3.setContent(html_a6c284a335e54ab4a33f365eea3260c7);
+            
+
+            circle_marker_772e86f4ff074e75903ed175f9d8dc22.bindPopup(popup_dbae1e9845534ba5aa8bdea03176f4e3)
+            ;
+
+            
+        
+    
+            var circle_marker_1135dcc7b52048af897fa65fdcabb807 = L.circleMarker(
+                [40.8143256, -73.9590255],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a12b67299b83425c8b28e113e16fd7ec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0708afa2cd11425d812f872e01bbfac1 = $(`<div id="html_0708afa2cd11425d812f872e01bbfac1" style="width: 100.0%; height: 100.0%;">Broadway & Moylan Pl<br>                 latitude: 40.8143256<br>                  longtitude: -73.9590255</div>`)[0];
+                popup_a12b67299b83425c8b28e113e16fd7ec.setContent(html_0708afa2cd11425d812f872e01bbfac1);
+            
+
+            circle_marker_1135dcc7b52048af897fa65fdcabb807.bindPopup(popup_a12b67299b83425c8b28e113e16fd7ec)
+            ;
+
+            
+        
+    
+            var circle_marker_48afa64891b843c88e359a7808e98043 = L.circleMarker(
+                [40.76590936, -73.97634151],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_e48a3fc7e04641a5892d59a5334c52c0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a8852b1639c44c2c90b04c9902e66fca = $(`<div id="html_a8852b1639c44c2c90b04c9902e66fca" style="width: 100.0%; height: 100.0%;">Central Park S & 6 Ave<br>                 latitude: 40.76590936<br>                  longtitude: -73.97634151</div>`)[0];
+                popup_e48a3fc7e04641a5892d59a5334c52c0.setContent(html_a8852b1639c44c2c90b04c9902e66fca);
+            
+
+            circle_marker_48afa64891b843c88e359a7808e98043.bindPopup(popup_e48a3fc7e04641a5892d59a5334c52c0)
+            ;
+
+            
+        
+    
+            var circle_marker_701a1851427f465e9711d5ae9a60826a = L.circleMarker(
+                [40.7734066, -73.97782542],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_dc9433e9872b420389a8a386a7de2389 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a7b18338c73f4e529656d987e81ae3a4 = $(`<div id="html_a7b18338c73f4e529656d987e81ae3a4" style="width: 100.0%; height: 100.0%;">Central Park West & W 68 St<br>                 latitude: 40.7734066<br>                  longtitude: -73.97782542</div>`)[0];
+                popup_dc9433e9872b420389a8a386a7de2389.setContent(html_a7b18338c73f4e529656d987e81ae3a4);
+            
+
+            circle_marker_701a1851427f465e9711d5ae9a60826a.bindPopup(popup_dc9433e9872b420389a8a386a7de2389)
+            ;
+
+            
+        
+    
+            var circle_marker_f42fed9eb75e40b0902eb7bd46827b6e = L.circleMarker(
+                [40.72771408, -74.01129574],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_3642a11d10704f69abea45d356686aff = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a423cc5755b3493e9702fd76149d3a31 = $(`<div id="html_a423cc5755b3493e9702fd76149d3a31" style="width: 100.0%; height: 100.0%;">Pier 40 - Hudson River Park<br>                 latitude: 40.72771408<br>                  longtitude: -74.01129574</div>`)[0];
+                popup_3642a11d10704f69abea45d356686aff.setContent(html_a423cc5755b3493e9702fd76149d3a31);
+            
+
+            circle_marker_f42fed9eb75e40b0902eb7bd46827b6e.bindPopup(popup_3642a11d10704f69abea45d356686aff)
+            ;
+
+            
+        
+    
+            var circle_marker_f0cca309960a4bd08da9f51c907672f3 = L.circleMarker(
+                [40.71748752, -74.0104554],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_96d208bf75514c248aa3be4698f2874b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3fad30fdab9b47b99bc6ebe8ac349bb0 = $(`<div id="html_3fad30fdab9b47b99bc6ebe8ac349bb0" style="width: 100.0%; height: 100.0%;">Duane St & Greenwich St<br>                 latitude: 40.71748752<br>                  longtitude: -74.0104554</div>`)[0];
+                popup_96d208bf75514c248aa3be4698f2874b.setContent(html_3fad30fdab9b47b99bc6ebe8ac349bb0);
+            
+
+            circle_marker_f0cca309960a4bd08da9f51c907672f3.bindPopup(popup_96d208bf75514c248aa3be4698f2874b)
+            ;
+
+            
+        
+    
+            var circle_marker_a92eed0efa764470850192f4a4cdeb1e = L.circleMarker(
+                [40.72494672, -74.00165856],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_4fee810a3c08479eac21c4a8edcadada = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c50ef03426b24fa4ae93faa681ba7635 = $(`<div id="html_c50ef03426b24fa4ae93faa681ba7635" style="width: 100.0%; height: 100.0%;">W Broadway & Spring Street<br>                 latitude: 40.72494672<br>                  longtitude: -74.00165856</div>`)[0];
+                popup_4fee810a3c08479eac21c4a8edcadada.setContent(html_c50ef03426b24fa4ae93faa681ba7635);
+            
+
+            circle_marker_a92eed0efa764470850192f4a4cdeb1e.bindPopup(popup_4fee810a3c08479eac21c4a8edcadada)
+            ;
+
+            
+        
+    
+            var circle_marker_28d076e6bef547949ba84a4d85131b51 = L.circleMarker(
+                [40.71173107, -73.99193043],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1a52b5d4f2a7492382b82a159fd2b74b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_99a7e6aecb07443ea8865714378443f8 = $(`<div id="html_99a7e6aecb07443ea8865714378443f8" style="width: 100.0%; height: 100.0%;">Pike St & Monroe St<br>                 latitude: 40.71173107<br>                  longtitude: -73.99193043</div>`)[0];
+                popup_1a52b5d4f2a7492382b82a159fd2b74b.setContent(html_99a7e6aecb07443ea8865714378443f8);
+            
+
+            circle_marker_28d076e6bef547949ba84a4d85131b51.bindPopup(popup_1a52b5d4f2a7492382b82a159fd2b74b)
+            ;
+
+            
+        
+    
+            var circle_marker_7435c28ea5a24408aa5db10a3f36e230 = L.circleMarker(
+                [40.69165183, -73.9999786],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_6d54cf4ab8384c4d9ba800f647e90a37 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_17094efdf27b4e019a48c7736b7f523a = $(`<div id="html_17094efdf27b4e019a48c7736b7f523a" style="width: 100.0%; height: 100.0%;">Atlantic Ave & Furman St<br>                 latitude: 40.69165183<br>                  longtitude: -73.9999786</div>`)[0];
+                popup_6d54cf4ab8384c4d9ba800f647e90a37.setContent(html_17094efdf27b4e019a48c7736b7f523a);
+            
+
+            circle_marker_7435c28ea5a24408aa5db10a3f36e230.bindPopup(popup_6d54cf4ab8384c4d9ba800f647e90a37)
+            ;
+
+            
+        
+    
+            var circle_marker_b687d607648241d180985a21de17bfc9 = L.circleMarker(
+                [40.74765947, -73.98490707],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a084b2f6ebb6433681df6a5eb859ed6e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e9ac2cd6919e4a93a0d5641ac829f331 = $(`<div id="html_e9ac2cd6919e4a93a0d5641ac829f331" style="width: 100.0%; height: 100.0%;">E 33 St & 5 Ave<br>                 latitude: 40.74765947<br>                  longtitude: -73.98490707</div>`)[0];
+                popup_a084b2f6ebb6433681df6a5eb859ed6e.setContent(html_e9ac2cd6919e4a93a0d5641ac829f331);
+            
+
+            circle_marker_b687d607648241d180985a21de17bfc9.bindPopup(popup_a084b2f6ebb6433681df6a5eb859ed6e)
+            ;
+
+            
+        
+    
+            var circle_marker_7020987af7d34065b5cff994a7ae6cfb = L.circleMarker(
+                [40.7462009, -73.98855723],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_de03d969917e4fad8b3f94ff3fb345e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ce7fe9a1e8ec4485a022a73953f15d53 = $(`<div id="html_ce7fe9a1e8ec4485a022a73953f15d53" style="width: 100.0%; height: 100.0%;">Broadway & W 29 St<br>                 latitude: 40.7462009<br>                  longtitude: -73.98855723</div>`)[0];
+                popup_de03d969917e4fad8b3f94ff3fb345e3.setContent(html_ce7fe9a1e8ec4485a022a73953f15d53);
+            
+
+            circle_marker_7020987af7d34065b5cff994a7ae6cfb.bindPopup(popup_de03d969917e4fad8b3f94ff3fb345e3)
+            ;
+
+            
+        
+    
+            var circle_marker_af17aef32e7e46d4b948c0f87468c597 = L.circleMarker(
+                [40.76341379, -73.99667444],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_c0b140a356da4facad4b979a736b96d0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b63acd55835944d68ce4ec2584e15b7a = $(`<div id="html_b63acd55835944d68ce4ec2584e15b7a" style="width: 100.0%; height: 100.0%;">W 46 St & 11 Ave<br>                 latitude: 40.76341379<br>                  longtitude: -73.99667444</div>`)[0];
+                popup_c0b140a356da4facad4b979a736b96d0.setContent(html_b63acd55835944d68ce4ec2584e15b7a);
+            
+
+            circle_marker_af17aef32e7e46d4b948c0f87468c597.bindPopup(popup_c0b140a356da4facad4b979a736b96d0)
+            ;
+
+            
+        
+    
+            var circle_marker_ebb99c72519b4eb2baab1444b4f37081 = L.circleMarker(
+                [40.76030096, -73.99884222],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_1dfd94e5eb9f47b39405a223a83eb140 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9bf88eb4c24d4a38a2fdfda4e1745de2 = $(`<div id="html_9bf88eb4c24d4a38a2fdfda4e1745de2" style="width: 100.0%; height: 100.0%;">11 Ave & W 41 St<br>                 latitude: 40.76030096<br>                  longtitude: -73.99884222</div>`)[0];
+                popup_1dfd94e5eb9f47b39405a223a83eb140.setContent(html_9bf88eb4c24d4a38a2fdfda4e1745de2);
+            
+
+            circle_marker_ebb99c72519b4eb2baab1444b4f37081.bindPopup(popup_1dfd94e5eb9f47b39405a223a83eb140)
+            ;
+
+            
+        
+    
+            var circle_marker_fa8a712b63f04686be8934dd33ef7f7d = L.circleMarker(
+                [40.75510267, -73.97498696],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_5cbc29e76e2c4bdaa5f4fc2269abe818 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f7c63ee69b4343c8a3b2a5225aade86d = $(`<div id="html_f7c63ee69b4343c8a3b2a5225aade86d" style="width: 100.0%; height: 100.0%;">E 47 St & Park Ave<br>                 latitude: 40.75510267<br>                  longtitude: -73.97498696</div>`)[0];
+                popup_5cbc29e76e2c4bdaa5f4fc2269abe818.setContent(html_f7c63ee69b4343c8a3b2a5225aade86d);
+            
+
+            circle_marker_fa8a712b63f04686be8934dd33ef7f7d.bindPopup(popup_5cbc29e76e2c4bdaa5f4fc2269abe818)
+            ;
+
+            
+        
+    
+            var circle_marker_d0a035ca859a44eda33dac645ed5efad = L.circleMarker(
+                [40.71485151, -74.01122332],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_78ce3e90cd494517bb929fb9de69001b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93c72586ea564f4baa134322be0a2f23 = $(`<div id="html_93c72586ea564f4baa134322be0a2f23" style="width: 100.0%; height: 100.0%;">Murray St & Greenwich St<br>                 latitude: 40.71485151<br>                  longtitude: -74.01122332</div>`)[0];
+                popup_78ce3e90cd494517bb929fb9de69001b.setContent(html_93c72586ea564f4baa134322be0a2f23);
+            
+
+            circle_marker_d0a035ca859a44eda33dac645ed5efad.bindPopup(popup_78ce3e90cd494517bb929fb9de69001b)
+            ;
+
+            
+        
+    
+            var circle_marker_7cc5740ff8994b62a4768e9677d705ce = L.circleMarker(
+                [40.70862144, -74.00722156],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_075a0c6ef74f4c6baccdd1f35af15a97 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_39b890695b15460a98c5facd0114586f = $(`<div id="html_39b890695b15460a98c5facd0114586f" style="width: 100.0%; height: 100.0%;">John St & William St<br>                 latitude: 40.70862144<br>                  longtitude: -74.00722156</div>`)[0];
+                popup_075a0c6ef74f4c6baccdd1f35af15a97.setContent(html_39b890695b15460a98c5facd0114586f);
+            
+
+            circle_marker_7cc5740ff8994b62a4768e9677d705ce.bindPopup(popup_075a0c6ef74f4c6baccdd1f35af15a97)
+            ;
+
+            
+        
+    
+            var circle_marker_ef8c8f64941b40a184b437a7c456056f = L.circleMarker(
+                [40.768254, -73.988639],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_a5346d6f504a4b4a9b265e2083c11122 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e9c418b8289f432fb7637c18599742d0 = $(`<div id="html_e9c418b8289f432fb7637c18599742d0" style="width: 100.0%; height: 100.0%;">W 56 St & 10 Ave<br>                 latitude: 40.768254<br>                  longtitude: -73.988639</div>`)[0];
+                popup_a5346d6f504a4b4a9b265e2083c11122.setContent(html_e9c418b8289f432fb7637c18599742d0);
+            
+
+            circle_marker_ef8c8f64941b40a184b437a7c456056f.bindPopup(popup_a5346d6f504a4b4a9b265e2083c11122)
+            ;
+
+            
+        
+    
+            var circle_marker_14a90ae000bb4e8fa2c276da8a12b42e = L.circleMarker(
+                [40.74854862, -73.98808416],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_84b873ee5e6e4329a2c88daafa9f9a24 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9bfa5b43d2d5411ba76e4f3db406ace2 = $(`<div id="html_9bfa5b43d2d5411ba76e4f3db406ace2" style="width: 100.0%; height: 100.0%;">Broadway & W 32 St<br>                 latitude: 40.74854862<br>                  longtitude: -73.98808416</div>`)[0];
+                popup_84b873ee5e6e4329a2c88daafa9f9a24.setContent(html_9bfa5b43d2d5411ba76e4f3db406ace2);
+            
+
+            circle_marker_14a90ae000bb4e8fa2c276da8a12b42e.bindPopup(popup_84b873ee5e6e4329a2c88daafa9f9a24)
+            ;
+
+            
+        
+    
+            var circle_marker_bcf132ed9aa44ef280d878262fc4f7c4 = L.circleMarker(
+                [40.73649403, -73.99704374],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_537213cf61de4be795a85da742f5aab1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_780b682b66c34e2696a829be66a5122b = $(`<div id="html_780b682b66c34e2696a829be66a5122b" style="width: 100.0%; height: 100.0%;">W 13 St & 6 Ave<br>                 latitude: 40.73649403<br>                  longtitude: -73.99704374</div>`)[0];
+                popup_537213cf61de4be795a85da742f5aab1.setContent(html_780b682b66c34e2696a829be66a5122b);
+            
+
+            circle_marker_bcf132ed9aa44ef280d878262fc4f7c4.bindPopup(popup_537213cf61de4be795a85da742f5aab1)
+            ;
+
+            
+        
+    
+            var circle_marker_dc0e18ba8d2f44bab598023db75436e5 = L.circleMarker(
+                [40.8067581, -73.9607082],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_498daf3622244dc885e6707719980bab = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_999c3dff169b47e6b0d90b94cfdfbc17 = $(`<div id="html_999c3dff169b47e6b0d90b94cfdfbc17" style="width: 100.0%; height: 100.0%;">W 116 St & Amsterdam Ave<br>                 latitude: 40.8067581<br>                  longtitude: -73.9607082</div>`)[0];
+                popup_498daf3622244dc885e6707719980bab.setContent(html_999c3dff169b47e6b0d90b94cfdfbc17);
+            
+
+            circle_marker_dc0e18ba8d2f44bab598023db75436e5.bindPopup(popup_498daf3622244dc885e6707719980bab)
+            ;
+
+            
+        
+    
+            var circle_marker_14af4b241cf9418fa74d44f2594fde45 = L.circleMarker(
+                [40.7489006, -73.97604882],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_253a8177a8574749ac9647ab876517da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7f024813555f490eac7d2c0b0a11391d = $(`<div id="html_7f024813555f490eac7d2c0b0a11391d" style="width: 100.0%; height: 100.0%;">E 39 St & 3 Ave<br>                 latitude: 40.7489006<br>                  longtitude: -73.97604882</div>`)[0];
+                popup_253a8177a8574749ac9647ab876517da.setContent(html_7f024813555f490eac7d2c0b0a11391d);
+            
+
+            circle_marker_14af4b241cf9418fa74d44f2594fde45.bindPopup(popup_253a8177a8574749ac9647ab876517da)
+            ;
+
+            
+        
+    
+            var circle_marker_2692ca0b82734a5e9d52bf45d223d904 = L.circleMarker(
+                [40.70706456, -74.00731853],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_8ef4f10ef008499fabfec7f217d8ae2c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7e8f1f62fbca407984780f4eefc7187a = $(`<div id="html_7e8f1f62fbca407984780f4eefc7187a" style="width: 100.0%; height: 100.0%;">Maiden Ln & Pearl St<br>                 latitude: 40.70706456<br>                  longtitude: -74.00731853</div>`)[0];
+                popup_8ef4f10ef008499fabfec7f217d8ae2c.setContent(html_7e8f1f62fbca407984780f4eefc7187a);
+            
+
+            circle_marker_2692ca0b82734a5e9d52bf45d223d904.bindPopup(popup_8ef4f10ef008499fabfec7f217d8ae2c)
+            ;
+
+            
+        
+    
+            var circle_marker_e1c21394dfd24a0fa92f45081e333b6f = L.circleMarker(
+                [40.74475148, -73.99915362],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_0cd8e409c81f43d082ec3ea04838eddf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_05413f9b8a374541b18615d360dbb5fa = $(`<div id="html_05413f9b8a374541b18615d360dbb5fa" style="width: 100.0%; height: 100.0%;">W 22 St & 8 Ave<br>                 latitude: 40.74475148<br>                  longtitude: -73.99915362</div>`)[0];
+                popup_0cd8e409c81f43d082ec3ea04838eddf.setContent(html_05413f9b8a374541b18615d360dbb5fa);
+            
+
+            circle_marker_e1c21394dfd24a0fa92f45081e333b6f.bindPopup(popup_0cd8e409c81f43d082ec3ea04838eddf)
+            ;
+
+            
+        
+    
+            var circle_marker_066916de994748a0a02794eaded007c7 = L.circleMarker(
+                [40.71291224, -74.01020234],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_0ffe83c3059448a09472082459b620a4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_33b201403473419f9e765cac7ad64542 = $(`<div id="html_33b201403473419f9e765cac7ad64542" style="width: 100.0%; height: 100.0%;">Barclay St & Church St<br>                 latitude: 40.71291224<br>                  longtitude: -74.01020234</div>`)[0];
+                popup_0ffe83c3059448a09472082459b620a4.setContent(html_33b201403473419f9e765cac7ad64542);
+            
+
+            circle_marker_066916de994748a0a02794eaded007c7.bindPopup(popup_0ffe83c3059448a09472082459b620a4)
+            ;
+
+            
+        
+    
+            var circle_marker_eb64381449a54b5aa9edd7e50c238f3b = L.circleMarker(
+                [40.73172428, -74.00674436],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_bf62c719a3c34fbf98965b0d95e909ee = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e33d5d7073b1489eba863b177f846b9b = $(`<div id="html_e33d5d7073b1489eba863b177f846b9b" style="width: 100.0%; height: 100.0%;">Barrow St & Hudson St<br>                 latitude: 40.73172428<br>                  longtitude: -74.00674436</div>`)[0];
+                popup_bf62c719a3c34fbf98965b0d95e909ee.setContent(html_e33d5d7073b1489eba863b177f846b9b);
+            
+
+            circle_marker_eb64381449a54b5aa9edd7e50c238f3b.bindPopup(popup_bf62c719a3c34fbf98965b0d95e909ee)
+            ;
+
+            
+        
+    
+            var circle_marker_fc63d0f6654747adad73ce4f02768c2b = L.circleMarker(
+                [40.70823502, -74.00530063],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_30a16f192c684e2596c792f34c1271f9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_754638d6aa274ce88757750234eb12d1 = $(`<div id="html_754638d6aa274ce88757750234eb12d1" style="width: 100.0%; height: 100.0%;">Cliff St & Fulton St_1<br>                 latitude: 40.70823502<br>                  longtitude: -74.00530063</div>`)[0];
+                popup_30a16f192c684e2596c792f34c1271f9.setContent(html_754638d6aa274ce88757750234eb12d1);
+            
+
+            circle_marker_fc63d0f6654747adad73ce4f02768c2b.bindPopup(popup_30a16f192c684e2596c792f34c1271f9)
+            ;
+
+            
+        
+    
+            var circle_marker_72c5969ffe044a12882af2ab4b0aafb1 = L.circleMarker(
+                [40.7746671, -73.98470567],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_843480f8c5b440358c91fd45cb53f01b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8ddf5f5126c6491e9c6604e1819dfd56 = $(`<div id="html_8ddf5f5126c6491e9c6604e1819dfd56" style="width: 100.0%; height: 100.0%;">Amsterdam Ave & W 66 St<br>                 latitude: 40.7746671<br>                  longtitude: -73.98470567</div>`)[0];
+                popup_843480f8c5b440358c91fd45cb53f01b.setContent(html_8ddf5f5126c6491e9c6604e1819dfd56);
+            
+
+            circle_marker_72c5969ffe044a12882af2ab4b0aafb1.bindPopup(popup_843480f8c5b440358c91fd45cb53f01b)
+            ;
+
+            
+        
+    
+            var circle_marker_29f50a15899e47bd989c2bd60e414736 = L.circleMarker(
+                [40.770513, -73.988038],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_7e12c4b2fc554ac7970751cb1e56ef88 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_441739f6a8624ef5a7ad4a5930bf9caf = $(`<div id="html_441739f6a8624ef5a7ad4a5930bf9caf" style="width: 100.0%; height: 100.0%;">W 59 St & 10 Ave<br>                 latitude: 40.770513<br>                  longtitude: -73.988038</div>`)[0];
+                popup_7e12c4b2fc554ac7970751cb1e56ef88.setContent(html_441739f6a8624ef5a7ad4a5930bf9caf);
+            
+
+            circle_marker_29f50a15899e47bd989c2bd60e414736.bindPopup(popup_7e12c4b2fc554ac7970751cb1e56ef88)
+            ;
+
+            
+        
+    
+            var circle_marker_de3a410fd75242a29b8acfedc40d0f27 = L.circleMarker(
+                [40.71625008, -74.0091059],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_876bd5b9af3f4cd6ad20052f307eb5c7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_17fb0157313444788189ca0e03e5fba4 = $(`<div id="html_17fb0157313444788189ca0e03e5fba4" style="width: 100.0%; height: 100.0%;">Hudson St & Reade St<br>                 latitude: 40.71625008<br>                  longtitude: -74.0091059</div>`)[0];
+                popup_876bd5b9af3f4cd6ad20052f307eb5c7.setContent(html_17fb0157313444788189ca0e03e5fba4);
+            
+
+            circle_marker_de3a410fd75242a29b8acfedc40d0f27.bindPopup(popup_876bd5b9af3f4cd6ad20052f307eb5c7)
+            ;
+
+            
+        
+    
+            var circle_marker_ef9728aed0044223a3160ab0a32da159 = L.circleMarker(
+                [40.68539567, -73.97431458],
+                {
+  "bubblingMouseEvents": true, 
+  "color": "#E37222", 
+  "dashArray": null, 
+  "dashOffset": null, 
+  "fill": true, 
+  "fillColor": "#E37222", 
+  "fillOpacity": 0.2, 
+  "fillRule": "evenodd", 
+  "lineCap": "round", 
+  "lineJoin": "round", 
+  "opacity": 1.0, 
+  "radius": 10, 
+  "stroke": true, 
+  "weight": 3
+}
+                )
+                .addTo(map_73912677d5ee48cfa594fe2cf647af2e);
+            
+    
+            var popup_8c04868f73894d839475822fb01fa632 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5cc332fdf8649a981baf1bbc9b80dde = $(`<div id="html_e5cc332fdf8649a981baf1bbc9b80dde" style="width: 100.0%; height: 100.0%;">S Portland Ave & Hanson Pl<br>                 latitude: 40.68539567<br>                  longtitude: -73.97431458</div>`)[0];
+                popup_8c04868f73894d839475822fb01fa632.setContent(html_e5cc332fdf8649a981baf1bbc9b80dde);
+            
+
+            circle_marker_ef9728aed0044223a3160ab0a32da159.bindPopup(popup_8c04868f73894d839475822fb01fa632)
+            ;
+
+            
+        
+</script>
