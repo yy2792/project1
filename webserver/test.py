@@ -447,6 +447,9 @@ def trips():
 @app.route('/tripsData/month/<int:month>/')
 def tripsData(month):
 
+    if month not in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]:
+        return json.dumps({"error": "Invalid month"}), 500
+    
     page, per_page, offset = get_page_args(page_parameter='page',
                                            per_page_parameter='per_page')
 
@@ -527,13 +530,25 @@ def addTrips():
 
     # only existing bid should be accessed
     cmd2 = "select exists(select 1 from bike where bid = :bid)"
-    cursor = g.conn.execute(text(cmd1), bid=stop_station_sid)
+    cursor = g.conn.execute(text(cmd2), bid = bike_id)
     res = None
     for c in cursor:
         res = c
     if not res['exists']:
-        return json.dumps({"error": "Invalid sid for stop station sid"}), 500
+        return json.dumps({"error": "Invalid bid for bike id"}), 500
 
+    # only existing bid should be accessed
+    cmd3 = "select exists(select 1 from users where uid = :uid)"
+    cursor = g.conn.execute(text(cmd3), uid = user_id)
+    res = False
+    for c in cursor:
+        res = c
+    if not res['exists']:
+        return json.dumps({"error": "Invalid uid for user id"}), 500
+
+    # a bike cannot get accessed at the same time, same station
+    cmd4 = "select exists(select 1 from users where uid = :uid)"
+    cursor = g.conn.execute(text(cmd3), uid=user_id)
 
 # parent directory for all weather data
 @app.route('/weather')

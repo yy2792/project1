@@ -22,10 +22,10 @@ body {
 <p><a href ="/stationRoutes">Visualize Stations with the Most Common Routes</a></P>
 
 <form method="POST" action="/addStation"><p>New station data:
-  sid: <input type="number" name="sid", step = 1>
-  name: <input type="text" name="name">
-  latitude: <input type="number" name="latitude", step = "any">
-  longtitude: <input type="number" name="longtitude", step = "any">
+  sid: <input type="number" name="sid" step = 1 required>
+  name: <input type="text" name="name" required>
+  latitude: <input type="number" name="latitude", step = "any" required>
+  longtitude: <input type="number" name="longtitude", step = "any" required>
   <input type="submit" value="Add"></p>
 </form>
 
