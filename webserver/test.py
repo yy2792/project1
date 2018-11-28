@@ -663,6 +663,59 @@ def storeData():
     return render_template("storeData.html", items = items)
 
 
+# parent directory for all bike data
+@app.route('/bike')
+def bike():
+    return render_template("bike.html")
+
+@app.route('/bikeData')
+def bikeData():
+
+    cursor = g.conn.execute("SELECT * FROM bike")
+    items = []
+
+    for result in cursor:
+        an_item = dict(bid = result['bid'], birth = result['birth'], birthplace = result['birthplace'])
+        items.append(an_item)
+
+    cursor.close()
+
+    return render_template("bikeData.html", items = items)
+
+@app.route('/addBike', methods=['POST'])
+def addBike():
+    birth = request.form['birth']
+    birthplace = request.form['birthplace']
+
+    cmd1 = "select exists(select 1 from station where sid = :sid)"
+    # if not already exists sid
+    cursor = g.conn.execute(text(cmd1), sid = birthplace)
+    res = None
+    for c in cursor:
+        res = c
+    cursor.close()
+    if not res['exists']:
+        return json.dumps({"error": "Invalid sid for birthplace"}), 500
+
+    cmd1 = "Select max(bid) count1 from bike"
+    cursor = g.conn.execute(cmd1)
+    res = None
+    for item in cursor:
+        res = item['count1']
+    cursor.close()
+
+    bid_value = res + 1
+
+    print("largest bid")
+    print(bid_value)
+
+    cmd = "INSERT INTO bike(bid, birth, birthplace) VALUES (:bid, :birth, :birthplace)"
+    g.conn.execute(text(cmd), bid = bid_value, birth = birth, birthplace = birthplace)
+
+    # test 2018, 3183
+
+    return redirect('/bikeData')
+
 def get_arrows(locations, some_map, color= "#E37222", size=6, n_arrows=3):
     '''
     Get a list of correctly placed and rotated
@@ -704,7 +757,6 @@ def get_arrows(locations, some_map, color= "#E37222", size=6, n_arrows=3):
                                                   fill_color=color, number_of_sides=3,
                                                   radius=size, rotation=rotation).add_to(some_map))
     return arrows
-
 
 def get_bearing(p1, p2):
     '''
