@@ -366,7 +366,7 @@ def stationRoutes():
     station_depart as  (select i2.rid, i2.sid, i2.time, s2.name, s2.latitude, s2.longtitude
     From involves i2, station s2
     Where i2.sid = s2.sid and i2.arrive_depart  = False),
-   Trips as (Select station_depart.time starttime, station_arrive.time
+    Trips as (Select station_depart.time starttime, station_arrive.time
     stoptime, station_depart.sid start_sid, station_depart.name start_station, 
     station_depart.latitude start_station_latitude, station_depart.longtitude start_station_longtitude, 
     station_arrive.sid stop_sid, station_arrive.name stop_station, station_arrive.latitude stop_station_latitude, 
@@ -507,6 +507,8 @@ def addTrips():
     bike_id = request.form['bike_id']
     user_id = request.form['user_id']
 
+    datetime = starttime[:10] + 'T00:00'
+
     if starttime > stoptime:
         return json.dumps({"error": "starttime should be earlier than stoptime"}), 500
 
@@ -518,6 +520,7 @@ def addTrips():
     res = None
     for c in cursor:
         res = c
+    cursor.close()
     if not res['exists']:
         return json.dumps({"error": "Invalid sid for start station sid"}), 500
 
@@ -525,6 +528,7 @@ def addTrips():
     res = None
     for c in cursor:
         res = c
+    cursor.close()
     if not res['exists']:
         return json.dumps({"error": "Invalid sid for stop station sid"}), 500
 
@@ -534,6 +538,8 @@ def addTrips():
     res = None
     for c in cursor:
         res = c
+
+    cursor.close()
     if not res['exists']:
         return json.dumps({"error": "Invalid bid for bike id"}), 500
 
@@ -543,6 +549,7 @@ def addTrips():
     res = False
     for c in cursor:
         res = c
+    cursor.close()
     if not res['exists']:
         return json.dumps({"error": "Invalid uid for user id"}), 500
 
@@ -575,6 +582,39 @@ def addTrips():
         res = c
     if res['exists']:
         return json.dumps({"error": "The record already exists"}), 500
+
+    # now insert
+    # insert one record to rides
+    # insert two record to involves
+    cmd1 = "Select max(rid) max_rid from ride"
+    cursor = g.conn.execute(cmd1)
+    res = None
+    for item in cursor:
+        res = item['max_rid']
+    cursor.close()
+
+    cmd2 = '''
+        INSERT INTO ride(rid, did, uid, bid) VALUES (:rid, :did, :uid, :bid)
+    '''
+    g.conn.execute(text(cmd2), rid = res + 1, did = datetime, uid = user_id, bid = bike_id)
+
+    # test: datetime 2018 11 28, user_id 0, bid 29590, start 3183, stop 3184
+
+    rid_value = res + 1
+
+    print(rid_value)
+
+    cmd3 = '''
+        INSERT INTO involves(rid, sid, arrive_depart, time) VALUES (:rid, :sid, :arrive_depart, :time)
+    '''
+
+    g.conn.execute(text(cmd3), rid=rid_value, sid=start_station_sid,
+                   arrive_depart=False, time=starttime)
+
+    g.conn.execute(text(cmd3), rid=rid_value, sid=stop_station_sid,
+                   arrive_depart=True, time=stoptime)
+
+    return redirect('/trips')
 
 
 # parent directory for all weather data
