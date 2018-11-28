@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Bike Data</h1>
+<p><a href="/bikeData">View Bike Data</a></p>
+
+<form method="POST" action="/addBike"><p>New bike data:
+  birth: <input type="datetime-local" name="birth" required>
+  birthplace: <input type="number" name="birthplace", step = 1 required>
+  <input type="submit" value="Add"></p>
+</form>
+
+</body>
+<html>

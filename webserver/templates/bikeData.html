@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#station {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+#station td, #customers th {
+    border: 1px solid #ddd;
+    padding: 6px;
+}
+
+#station tr:nth-child(even){background-color: #f2f2f2;}
+
+#station tr:hover {background-color: #ddd;}
+
+#station th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #00BFFF;
+    color: white;
+}
+</style>
+</head>
+
+<body>
+<h1>Bike Data</h1>
+
+<p><a href="/bike">Go back to bike page</a></p>
+
+<div style="overflow-x:auto;">
+<table id="station">
+  <tr>
+    <th>bid</th>
+    <th>birth</th>
+    <th>birthplace</th>
+  </tr>
+ {% for item in items %}
+  <tr>
+    <TD>{{item.bid}}</TD>
+    <TD>{{item.birth}}</TD>
+    <TD>{{item.birthplace}}</TD>
+  </tr>
+{% endfor %}
+</table>
+
+</div>
+
+</body>
+</html>
